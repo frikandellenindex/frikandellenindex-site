@@ -1,0 +1,337 @@
+[
+ {
+  "slug": "gevulde-koek",
+  "naam": "een gevulde koek",
+  "kort": "de gevulde koek",
+  "moment": "koffie",
+  "antwoord": "Een gevulde koek van 74 gram heeft 304 kcal. Dat is evenveel als <b>1,7 frikandel</b>.",
+  "knipoog": "Bij de koffie bij je schoonmoeder blijft het zelden bij één.",
+  "kop": "Gevulde koek",
+  "rijen": [
+   [
+    "Jumbo (67 g)",
+    275
+   ],
+   [
+    "Gemiddeld (74 g)",
+    304
+   ],
+   [
+    "AH (81 g)",
+    333
+   ]
+  ],
+  "tekst": [
+   "Een gevulde koek koop je in de winkel, dus we rekenen met wat er in de winkel ligt: het gemiddelde van AH en Jumbo. Het RIVM noemt een kleinere koek van 60 gram, maar die kom je in de schappen nauwelijks tegen.",
+   "Tussen de supermarkten scheelt het bijna een halve frikandel. De keuze voor je supermarkt is dus ook een voedingskeuze. Grapje."
+  ],
+  "extra": [
+   [
+    "Hoeveel weegt een gevulde koek?",
+    "Een gevulde koek van AH weegt 81 gram, die van Jumbo 67 gram. Gemiddeld is dat 74 gram. Het RIVM gaat uit van 60 gram."
+   ]
+  ],
+  "links": [
+   [
+    "/nieuws/schoonmoeder-ontkent-alles/",
+    "Lees: Schoonmoeder ontkent alles: ‘Ik bood gewoon een gevulde koek aan’"
+   ]
+  ]
+ },
+ {
+  "slug": "stroopwafel",
+  "naam": "een stroopwafel",
+  "kort": "de stroopwafel",
+  "moment": "werk",
+  "antwoord": "Een stroopwafel van 38 gram heeft 180 kcal. Dat is precies <b>1 frikandel</b>.",
+  "knipoog": "Om vier uur, elke dag.",
+  "kop": "Stroopwafel",
+  "rijen": [
+   [
+    "1 stroopwafel (38 g)",
+    180
+   ],
+   [
+    "2 stroopwafels",
+    360
+   ],
+   [
+    "4 halve stroopwafels",
+    360
+   ]
+  ],
+  "tekst": [
+   "Van alle snacks in de index komt de stroopwafel het mooist uit: één stroopwafel is één frikandel. Handig om mee te rekenen.",
+   "Wie hem doormidden breekt om de portie klein te houden, moet wel opletten. Vier halve zijn er nog steeds twee."
+  ],
+  "extra": [
+   [
+    "Hoeveel weegt een stroopwafel?",
+    "Een gewone stroopwafel weegt 38 gram volgens het RIVM. Die van AH weegt 39 gram."
+   ]
+  ],
+  "links": [
+   [
+    "/nieuws/vier-halve-stroopwafels/",
+    "Lees: Man eet vier halve stroopwafels om porties klein te houden"
+   ]
+  ]
+ },
+ {
+  "slug": "chips",
+  "naam": "een zak chips",
+  "kort": "chips",
+  "moment": "tv",
+  "antwoord": "Een gewone zak chips naturel van 225 gram heeft 1217 kcal. Dat is evenveel als <b>6,8 frikandel</b>.",
+  "knipoog": "Inclusief lucht.",
+  "kop": "Chips naturel",
+  "rijen": [
+   [
+    "Handje (14 g)",
+    76
+   ],
+   [
+    "Uitdeelzakje (28 g)",
+    151
+   ],
+   [
+    "Zak (225 g)",
+    1217
+   ],
+   [
+    "Grote zak (275 g)",
+    1488
+   ]
+  ],
+  "tekst": [
+   "Eén handje is weinig: 0,4 frikandel. Daar zit het probleem ook niet. Het probleem is dat niemand één handje neemt.",
+   "Volgens het RIVM is een handje een half uitdeelzakje. Volgens de bank is een handje “tot de zak leeg is”."
+  ],
+  "extra": [
+   [
+    "Hoeveel chips is een handje?",
+    "Volgens het RIVM is een handje chips een half uitdeelzakje: 14 gram. Dat is 76 kcal, of 0,4 frikandel."
+   ]
+  ],
+  "links": [
+   [
+    "/nieuws/wetenschappers-bevestigen-een-handje-chips/",
+    "Lees: Wetenschappers bevestigen bestaan van één handje chips"
+   ],
+   [
+    "/nieuws/chipszak-geen-portie/",
+    "Lees: Vrouw die rechtstreeks uit chipszak eet, ontkent portie te hebben genomen"
+   ]
+  ]
+ },
+ {
+  "slug": "borrelnoten",
+  "naam": "borrelnoten",
+  "kort": "borrelnoten",
+  "moment": "verjaardag",
+  "vraag": "Hoeveel calorieën hebben borrelnoten?",
+  "antwoord": "Een handje borrelnoten (25 g) heeft 133 kcal. Dat is <b>0,7 frikandel</b>. Een hele schaal is al gauw <b>6 frikandellen</b>.",
+  "knipoog": "Maar wie telt er handjes?",
+  "kop": "Borrelnoten",
+  "rijen": [
+   [
+    "Handje (25 g)",
+    133
+   ],
+   [
+    "Halve schaal, 4 handjes (100 g)",
+    532
+   ],
+   [
+    "Hele schaal, 8 handjes (200 g)",
+    1064
+   ],
+   [
+    "Zak (300 g)",
+    1596
+   ]
+  ],
+  "tekst": [
+   "Borrelnoten zijn de stille kampioen van de index. Niemand bestelt zes frikandellen bij de borrel, maar een schaal borrelnoten staat er gewoon.",
+   "En hij wordt bijgevuld voordat hij leeg is."
+  ],
+  "extra": [
+   [
+    "Hoeveel borrelnoten zijn een handje?",
+    "Volgens het RIVM is een handje borrelnoten 25 gram. Dat is 133 kcal, of 0,7 frikandel."
+   ]
+  ],
+  "links": [
+   [
+    "/nieuws/man-weigert-tweede-frikandel/",
+    "Lees: Man weigert tweede frikandel, eet daarna probleemloos halve schaal borrelnoten"
+   ]
+  ]
+ },
+ {
+  "slug": "borrel",
+  "naam": "een vrijdagborrel",
+  "kort": "de borrel",
+  "moment": "borrel",
+  "antwoord": "Vijf handjes borrelnoten, vier blokjes kaas en twee biertjes zijn samen 1081 kcal. Dat is evenveel als <b>6 frikandellen</b>.",
+  "knipoog": "Staand genuttigd.",
+  "kop": "Op de borrel",
+  "rijen": [
+   [
+    "5 handjes borrelnoten",
+    665
+   ],
+   [
+    "4 blokjes kaas",
+    152
+   ],
+   [
+    "2 flesjes bier",
+    264
+   ],
+   [
+    "Samen",
+    1081
+   ],
+   [
+    "Met 6 bitterballen erbij",
+    1453
+   ]
+  ],
+  "tekst": [
+   "Een borrel is geen maaltijd. Toch eten veel mensen daarna niet meer.",
+   "Dat is geen toeval: zes frikandellen is een maaltijd. Zonder bord, zonder stoel en zonder dat iemand het zo noemt."
+  ],
+  "extra": [
+   [
+    "Hoeveel calorieën heeft een bitterbal?",
+    "Een bitterbal van 17 gram heeft 62 kcal. Dat is 0,3 frikandel. Zes bitterballen zijn 2,1 frikandel."
+   ]
+  ],
+  "links": [
+   [
+    "/nieuws/vrijdagmiddagborrel-geen-maaltijd/",
+    "Lees: Werkgever: vrijdagmiddagborrel is geen maaltijd zolang medewerkers blijven staan"
+   ]
+  ]
+ },
+ {
+  "slug": "snickers",
+  "naam": "een Snickers",
+  "kort": "de Snickers",
+  "moment": "werk",
+  "antwoord": "Een Snickers van 50 gram heeft 242 kcal. Dat is evenveel als <b>1,3 frikandel</b>.",
+  "knipoog": "“Even iets kleins uit de automaat.”",
+  "kop": "Uit de automaat",
+  "rijen": [
+   [
+    "Twix (50 g)",
+    248
+   ],
+   [
+    "Snickers (50 g)",
+    242
+   ],
+   [
+    "Zakje M&M's (45 g)",
+    230
+   ],
+   [
+    "Mars (50 g)",
+    224
+   ],
+   [
+    "KitKat (42 g)",
+    218
+   ]
+  ],
+  "tekst": [
+   "Kijk eens naar een snoepautomaat: bijna alles erin is meer dan een frikandel. Zo is De Frikandellenindex ook begonnen.",
+   "Om drie uur loopt niemand naar de snackbar. Naar de automaat wel."
+  ],
+  "extra": [
+   [
+    "Wat heeft de meeste calorieën: Snickers, Mars of Twix?",
+    "Twix: 248 kcal per pakje van 50 gram. Snickers heeft 242 kcal en Mars 224. Ze zijn alle drie ongeveer 1,2 tot 1,4 frikandel."
+   ]
+  ],
+  "links": [
+   [
+    "/nieuws/definitie-even-iets-kleins-halen/",
+    "Lees: Werkgever wil wettelijke definitie van ‘even iets kleins halen’"
+   ],
+   [
+    "/over/hoe-het-begon/",
+    "Hoe De Frikandellenindex begon"
+   ]
+  ]
+ },
+ {
+  "slug": "tompouce",
+  "naam": "een tompouce",
+  "kort": "de tompouce",
+  "moment": "verjaardag",
+  "antwoord": "Een tompouce van 85 gram heeft 268 kcal. Dat is evenveel als <b>1,5 frikandel</b>.",
+  "knipoog": "Het glazuur telt mee, ook als het op je overhemd zit.",
+  "kop": "Tompouce",
+  "rijen": [
+   [
+    "AH (81 g)",
+    255
+   ],
+   [
+    "RIVM (85 g)",
+    268
+   ]
+  ],
+  "tekst": [
+   "De tompouce is de lastigste snack van Nederland om netjes te eten, en een van de makkelijkste om ongemerkt te eten.",
+   "Op een verjaardag staat hij er gewoon, en “eentje kan wel”. Met het oranje glazuur rond Koningsdag ook."
+  ],
+  "extra": [
+   [
+    "Hoeveel weegt een tompouce?",
+    "Een tompouce weegt volgens het RIVM 85 gram. Die van AH weegt 81 gram."
+   ]
+  ],
+  "links": []
+ },
+ {
+  "slug": "wijn",
+  "naam": "een glas wijn",
+  "kort": "wijn",
+  "moment": "borrel",
+  "antwoord": "Een groot glas rode wijn (150 ml) heeft 114 kcal. Dat is <b>0,6 frikandel</b>. Drie glazen zijn <b>1,9 frikandel</b>.",
+  "knipoog": "Het derde glas schenkt zichzelf in.",
+  "kop": "Rode wijn",
+  "rijen": [
+   [
+    "Klein glas (125 ml)",
+    95
+   ],
+   [
+    "Groot glas (150 ml)",
+    114
+   ],
+   [
+    "Drie grote glazen",
+    342
+   ],
+   [
+    "Fles (750 ml)",
+    570
+   ]
+  ],
+  "tekst": [
+   "Wijn voelt niet als eten. Daarom staat hij in de index: twee glazen zijn al meer dan een frikandel.",
+   "En bij wijn hoort meestal kaas, en dan gaat het snel."
+  ],
+  "extra": [
+   [
+    "Heeft witte wijn minder calorieën dan rode?",
+    "Een beetje. Een groot glas droge witte wijn (150 ml) heeft 100 kcal, rode wijn 114 kcal. Allebei ongeveer 0,6 frikandel."
+   ]
+  ],
+  "links": []
+ }
+]

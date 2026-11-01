@@ -1,0 +1,36 @@
+<!--meta {"title": "Hoeveel frikandellen was dat? Reken je snackmoment uit | De Frikandellenindex", "description": "Vrijdagborrel, verjaardag of koffie bij je schoonmoeder: tik aan wat je pakte en zie hoeveel frikandellen het was. Met je eigen bonnetje.", "path": "/reken/", "tab": "reken"} -->
+<section class="board" aria-labelledby="h-calc">
+    <div class="sechead"><h1 class="h2" id="h-calc">Hoeveel frikandellen was dat?</h1><p>Kies je moment en tik op + bij alles wat je pakte. Eerlijk tellen mag, niemand kijkt mee.</p></div>
+    <div class="tabs" role="group" aria-label="Kies een moment" id="mtabs"></div>
+    <p class="tagline" id="tagline"></p>
+    <div class="list" id="list"></div>
+    <div class="extra">
+      <button type="button" class="addbtn" id="addbtn" aria-expanded="false" aria-controls="addbox">+ Staat jouw snack er niet bij?</button>
+      <div class="addbox" id="addbox" hidden>
+        <label class="addlab" for="addq">Zoek in de bekende snacks</label>
+        <input id="addq" type="search" autocomplete="off" placeholder="Bijvoorbeeld tompouce of Snickers">
+        <div class="addres" id="addres"></div>
+      </div>
+    </div>
+    <div class="result" aria-live="polite">
+      <span class="r-moment" id="rmoment"></span>
+      <div class="score"><span class="n" id="n">0</span><span class="u" id="nu">frikandellen</span></div>
+      <span class="crown" id="crown" hidden>Frikandellenkoning</span>
+      <div class="dels" id="dels" aria-hidden="true"></div>
+      <p class="joke" id="joke"></p>
+      <p class="note" id="note" hidden>Calorieën zeggen niets over hoe gezond iets is. Alleen over hoeveel.</p>
+      <div class="bon" id="bon" hidden></div>
+      <button class="reset" id="reset" type="button">Opnieuw tellen</button>
+    </div>
+    <div class="share" id="share" hidden>
+      <h3>Deel je bonnetje</h3>
+      <p id="sharetxt"></p>
+      <button class="copy" id="sharebon" type="button">Deel je bonnetje</button>
+      <div class="bonimg" id="bonimg" hidden>
+        <img id="bonpic" alt="Jouw bonnetje als plaatje">
+        <span class="small" id="bonhint">Houd het plaatje ingedrukt om het op te slaan of te delen.</span>
+      </div>
+      <button class="reset" id="copytxt" type="button">Of kopieer alleen de tekst</button>
+      <span class="copied" id="copied" hidden></span>
+    </div>
+  </section>

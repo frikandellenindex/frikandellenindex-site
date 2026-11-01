@@ -1,0 +1,602 @@
+{
+  "momenten": [
+    {
+      "id": "borrel",
+      "knop": "Vrijdagborrel",
+      "naam": "De vrijdagmiddagborrel",
+      "tagline": "Het begon met één drankje. Zoals altijd.",
+      "deeltekst": "Op de vrijdagborrel",
+      "grappen": {
+        "weinig": [
+          "Netjes. Je hebt vooral staan praten."
+        ],
+        "flink": [
+          "Niemand bestelt een frikandel bij de borrel. Een schaaltje wel."
+        ],
+        "koningszone": [
+          "Het schaaltje is leeg. Jij weet waarom."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Handje borrelnoten",
+          "kcal": 133,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Handje pinda's",
+          "kcal": 155,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Blokje kaas",
+          "kcal": 38,
+          "portie": "10 g"
+        },
+        {
+          "naam": "Plakje salami",
+          "kcal": 20,
+          "portie": "5 g"
+        },
+        {
+          "naam": "Blokje brie",
+          "kcal": 37,
+          "portie": "10 g"
+        },
+        {
+          "naam": "Biertje",
+          "kcal": 132,
+          "portie": "flesje 300 ml"
+        },
+        {
+          "naam": "Glas wijn",
+          "kcal": 114,
+          "portie": "150 ml"
+        },
+        {
+          "naam": "Speciaalbiertje",
+          "kcal": 211,
+          "portie": "330 ml"
+        }
+      ],
+      "deelregel": "Laat zien hoe gezellig het was.",
+      "suggesties": [
+        "Bitterbal",
+        "Mini-loempia",
+        "Handje chips",
+        "Blokje leverworst"
+      ]
+    },
+    {
+      "id": "verjaardag",
+      "knop": "Verjaardag",
+      "naam": "De verjaardag",
+      "tagline": "'Ik heb alleen wat hapjes gehad.' Zegt iedereen.",
+      "deeltekst": "Op een verjaardag",
+      "grappen": {
+        "weinig": [
+          "Je zat naast de kaasplank en bleef eraf."
+        ],
+        "flink": [
+          "Je hebt alleen wat hapjes gehad. Dat klopt. Heel veel kleine hapjes."
+        ],
+        "koningszone": [
+          "Je kwam feliciteren. Je ging naar huis met {n} frikandellen."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Blokje kaas",
+          "kcal": 38,
+          "portie": "10 g"
+        },
+        {
+          "naam": "Blokje leverworst",
+          "kcal": 29,
+          "portie": "10 g"
+        },
+        {
+          "naam": "Handje chips",
+          "kcal": 76,
+          "portie": "14 g"
+        },
+        {
+          "naam": "Handje borrelnoten",
+          "kcal": 133,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Punt appeltaart",
+          "kcal": 259,
+          "portie": "115 g"
+        },
+        {
+          "naam": "Toef slagroom",
+          "kcal": 70,
+          "portie": "20 g"
+        },
+        {
+          "naam": "Biertje",
+          "kcal": 132,
+          "portie": "flesje 300 ml"
+        },
+        {
+          "naam": "Glas wijn",
+          "kcal": 114,
+          "portie": "150 ml"
+        }
+      ],
+      "deelregel": "Stuur het naar de jarige.",
+      "suggesties": [
+        "Bitterbal",
+        "Punt slagroomtaart",
+        "Handje Japanse mix",
+        "Plakje salami"
+      ]
+    },
+    {
+      "id": "koffie",
+      "knop": "Koffie bij schoonmoeder",
+      "naam": "Koffie bij je schoonmoeder",
+      "tagline": "Je kwam voor een kop koffie.",
+      "deeltekst": "Op de koffie bij mijn schoonmoeder",
+      "grappen": {
+        "weinig": [
+          "Eén koekje. Je schoonmoeder vraagt zich af of alles goed gaat."
+        ],
+        "flink": [
+          "Je schoonmoeder heeft je geen frikandel aangeboden. Technisch gezien."
+        ],
+        "koningszone": [
+          "Nee zeggen tegen je schoonmoeder is lastig. Dat zien we."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Gevulde koek",
+          "kcal": 304,
+          "portie": "74 g"
+        },
+        {
+          "naam": "Stroopwafel",
+          "kcal": 180,
+          "portie": "38 g"
+        },
+        {
+          "naam": "Roomboterkoekje",
+          "kcal": 45,
+          "portie": "10 g"
+        },
+        {
+          "naam": "Punt appeltaart",
+          "kcal": 259,
+          "portie": "115 g"
+        },
+        {
+          "naam": "Toef slagroom",
+          "kcal": 70,
+          "portie": "20 g"
+        },
+        {
+          "naam": "Tompouce",
+          "kcal": 268,
+          "portie": "85 g"
+        },
+        {
+          "naam": "Chocolate chip cookie",
+          "kcal": 105,
+          "portie": "21 g"
+        },
+        {
+          "naam": "Latte macchiato",
+          "kcal": 115,
+          "portie": "250 ml"
+        }
+      ],
+      "deelregel": "Stuur het naar je schoonmoeder. Of juist niet.",
+      "suggesties": [
+        "Slagroomsoesje",
+        "Plak bananenbrood",
+        "Kokoskoek",
+        "Plakje rozijnencake"
+      ]
+    },
+    {
+      "id": "werk",
+      "knop": "Vieruursdip",
+      "naam": "De vieruursdip",
+      "tagline": "De automaat kent je inmiddels bij naam.",
+      "deeltekst": "Tijdens de vieruursdip",
+      "grappen": {
+        "weinig": [
+          "Bijna niks gepakt. Morgen staat hij er weer."
+        ],
+        "flink": [
+          "Om vier uur een frikandel halen? Nooit. Dit? Gewoon gedaan."
+        ],
+        "koningszone": [
+          "Dit was geen dip meer. Dit was een tweede lunch."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Snickers",
+          "kcal": 242,
+          "portie": "50 g"
+        },
+        {
+          "naam": "Mars",
+          "kcal": 224,
+          "portie": "50 g"
+        },
+        {
+          "naam": "KitKat",
+          "kcal": 218,
+          "portie": "4 staafjes, 42 g"
+        },
+        {
+          "naam": "Pakje fruitbiscuits",
+          "kcal": 174,
+          "portie": "3 stuks, 44 g"
+        },
+        {
+          "naam": "Stroopwafel",
+          "kcal": 180,
+          "portie": "38 g"
+        },
+        {
+          "naam": "Gevulde koek",
+          "kcal": 304,
+          "portie": "74 g"
+        },
+        {
+          "naam": "Rijstwafel met chocolade",
+          "kcal": 85,
+          "portie": "17 g"
+        },
+        {
+          "naam": "Chocolademelk uit de automaat",
+          "kcal": 86,
+          "portie": "130 ml"
+        }
+      ],
+      "deelregel": "Stuur het naar de collega die er ook één pakte.",
+      "suggesties": [
+        "Twix",
+        "Knoppers",
+        "Zakje M&M's",
+        "Saucijzenbroodje"
+      ]
+    },
+    {
+      "id": "tv",
+      "knop": "Avondje op de bank",
+      "naam": "Avondje op de bank",
+      "tagline": "Nog één aflevering. Nog één handje.",
+      "deeltekst": "Op de bank",
+      "grappen": {
+        "weinig": [
+          "Je hebt vooral naar de film gekeken. Zeldzaam."
+        ],
+        "flink": [
+          "En je bent niet eens van de bank gekomen."
+        ],
+        "koningszone": [
+          "Je zou nooit {n} frikandellen pakken tijdens een film. En toch.",
+          "Aflevering vier. Frikandel vier. Ongeveer."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Handje chips",
+          "kcal": 76,
+          "portie": "14 g"
+        },
+        {
+          "naam": "Handje Japanse mix",
+          "kcal": 105,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Handje M&M's",
+          "kcal": 87,
+          "portie": "17 g"
+        },
+        {
+          "naam": "Pindarotsje",
+          "kcal": 41,
+          "portie": "7 g"
+        },
+        {
+          "naam": "Handje tortillachips",
+          "kcal": 72,
+          "portie": "15 g"
+        },
+        {
+          "naam": "Bolletje ijs",
+          "kcal": 110,
+          "portie": "50 g"
+        },
+        {
+          "naam": "Blikje cola",
+          "kcal": 135,
+          "portie": "330 ml"
+        },
+        {
+          "naam": "Biertje",
+          "kcal": 132,
+          "portie": "flesje 300 ml"
+        }
+      ],
+      "deelregel": "Bewijs dat de film goed was.",
+      "suggesties": [
+        "Schaaltje zoete popcorn",
+        "Handje kroepoek",
+        "Twix",
+        "Glas wijn"
+      ]
+    },
+    {
+      "id": "gezond",
+      "knop": "Gezond tussendoortje",
+      "naam": "Het gezonde tussendoortje",
+      "tagline": "Verantwoord gekozen. Toch even rekenen.",
+      "deeltekst": "Met een gezond tussendoortje",
+      "grappen": {
+        "weinig": [
+          "Gezond én licht. Dat bestaat ook."
+        ],
+        "flink": [
+          "Het voelde verantwoord. Tot de frikandel erbij kwam."
+        ],
+        "koningszone": [
+          "Het voelde als een salade. Het telde als {n} frikandellen.",
+          "Verantwoord gekozen. Veel verantwoord gekozen."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Bakje Griekse yoghurt",
+          "kcal": 183,
+          "portie": "150 g"
+        },
+        {
+          "naam": "Krentenbol",
+          "kcal": 174,
+          "portie": "65 g"
+        },
+        {
+          "naam": "Smoothie",
+          "kcal": 140,
+          "portie": "250 ml"
+        },
+        {
+          "naam": "Mueslireep",
+          "kcal": 114,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Eiwitreep",
+          "kcal": 278,
+          "portie": "55 g"
+        },
+        {
+          "naam": "Handje ongezouten noten",
+          "kcal": 164,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Handje studentenhaver",
+          "kcal": 124,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Glas sinaasappelsap",
+          "kcal": 90,
+          "portie": "200 ml"
+        },
+        {
+          "naam": "Bakje Griekse yoghurt met krokante muesli",
+          "kcal": 319,
+          "portie": "150 g + 30 g muesli"
+        }
+      ],
+      "deelregel": "Laat zien hoe verantwoord je bezig was.",
+      "suggesties": [
+        "5 dadels",
+        "Halve avocado",
+        "Doosje rozijnen",
+        "Plak bananenbrood"
+      ]
+    },
+    {
+      "id": "feest",
+      "knop": "Sinterklaas en kerst",
+      "naam": "Sinterklaas en kerst",
+      "tagline": "Het is maar één keer per jaar. Of de hele maand december.",
+      "deeltekst": "Met Sinterklaas en kerst",
+      "grappen": {
+        "weinig": [
+          "Je liet de schaal staan. In december."
+        ],
+        "flink": [
+          "Kruidnoten tellen niet, zegt iedereen. De index wel."
+        ],
+        "koningszone": [
+          "{n} frikandellen. De Sint schrijft het op in het grote boek."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Handje kruidnoten",
+          "kcal": 110,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Handje chocoladekruidnoten",
+          "kcal": 172,
+          "portie": "10 stuks, 35 g"
+        },
+        {
+          "naam": "Chocoladeletter",
+          "kcal": 740,
+          "portie": "135 g"
+        },
+        {
+          "naam": "Borstplaatje",
+          "kcal": 35,
+          "portie": "10 g"
+        },
+        {
+          "naam": "Stukje marsepein",
+          "kcal": 105,
+          "portie": "25 g"
+        },
+        {
+          "naam": "Plak kerststol",
+          "kcal": 155,
+          "portie": "55 g"
+        },
+        {
+          "naam": "Plak gevulde speculaas",
+          "kcal": 218,
+          "portie": "5 cm, 50 g"
+        },
+        {
+          "naam": "Beker chocolademelk met slagroom",
+          "kcal": 275,
+          "portie": "250 ml + toef"
+        }
+      ],
+      "deelregel": "Stuur het naar de Sint.",
+      "suggesties": [
+        "Speculaasje",
+        "Glaasje advocaat",
+        "Toef slagroom",
+        "Glas wijn"
+      ]
+    }
+  ],
+  "extra_producten": [
+    {
+      "naam": "Saucijzenbroodje",
+      "kcal": 370,
+      "portie": "104 g"
+    },
+    {
+      "naam": "Kaasbroodje",
+      "kcal": 423,
+      "portie": "88 g"
+    },
+    {
+      "naam": "Worstenbroodje",
+      "kcal": 344,
+      "portie": "90 g"
+    },
+    {
+      "naam": "Croissant",
+      "kcal": 248,
+      "portie": "60 g"
+    },
+    {
+      "naam": "Twix",
+      "kcal": 248,
+      "portie": "2 staafjes, 50 g"
+    },
+    {
+      "naam": "Knoppers",
+      "kcal": 137,
+      "portie": "25 g"
+    },
+    {
+      "naam": "Handje cashewnoten",
+      "kcal": 154,
+      "portie": "25 g"
+    },
+    {
+      "naam": "Handje olijven",
+      "kcal": 49,
+      "portie": "10 stuks, 40 g"
+    },
+    {
+      "naam": "Schaaltje zoete popcorn",
+      "kcal": 156,
+      "portie": "40 g"
+    },
+    {
+      "naam": "Handje kroepoek",
+      "kcal": 52,
+      "portie": "10 g"
+    },
+    {
+      "naam": "Slagroomsoesje",
+      "kcal": 127,
+      "portie": "45 g"
+    },
+    {
+      "naam": "Kokoskoek",
+      "kcal": 310,
+      "portie": "60 g"
+    },
+    {
+      "naam": "Plak bananenbrood",
+      "kcal": 224,
+      "portie": "75 g"
+    },
+    {
+      "naam": "Plakje rozijnencake",
+      "kcal": 115,
+      "portie": "30 g"
+    },
+    {
+      "naam": "Punt slagroomtaart",
+      "kcal": 316,
+      "portie": "100 g"
+    },
+    {
+      "naam": "Glaasje advocaat",
+      "kcal": 118,
+      "portie": "50 ml"
+    },
+    {
+      "naam": "Speculaasje",
+      "kcal": 84,
+      "portie": "18 g"
+    },
+    {
+      "naam": "Halve avocado",
+      "kcal": 167,
+      "portie": "90 g"
+    },
+    {
+      "naam": "Doosje rozijnen",
+      "kcal": 46,
+      "portie": "14 g"
+    },
+    {
+      "naam": "5 dadels",
+      "kcal": 92,
+      "portie": "30 g"
+    },
+    {
+      "naam": "Diep bord krokante muesli",
+      "kcal": 304,
+      "portie": "67 g"
+    },
+    {
+      "naam": "Zakje M&M's",
+      "kcal": 230,
+      "portie": "45 g"
+    },
+    {
+      "naam": "Bitterbal",
+      "kcal": 62,
+      "portie": "1 stuk, 17 g"
+    },
+    {
+      "naam": "Mini-loempia",
+      "kcal": 36,
+      "portie": "1 stuk, 20 g"
+    }
+  ]
+}

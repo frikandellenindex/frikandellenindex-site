@@ -1,0 +1,72 @@
+[
+  {
+    "snack": "Een gevulde koek",
+    "portie": "74 gram, bij de koffie",
+    "grens": 1.5,
+    "kcal": 304,
+    "knipoog": "Niemand zegt: neem even anderhalve frikandel bij de koffie."
+  },
+  {
+    "snack": "Een stroopwafel",
+    "portie": "38 gram, om vier uur",
+    "grens": 1.5,
+    "kcal": 180,
+    "knipoog": "Precies één frikandel. Het probleem is meestal de tweede."
+  },
+  {
+    "snack": "4 handjes borrelnoten",
+    "portie": "100 gram, op een verjaardag",
+    "grens": 2.5,
+    "kcal": 532,
+    "knipoog": "Niemand bestelt drie frikandellen. Een schaaltje wel."
+  },
+  {
+    "snack": "Een blikje cola",
+    "portie": "330 ml",
+    "grens": 1,
+    "kcal": 135,
+    "knipoog": "Minder dan je dacht. Drinken telt wel gewoon mee."
+  },
+  {
+    "snack": "Een Snickers uit de automaat",
+    "portie": "50 gram, maandag 15:00",
+    "grens": 1,
+    "kcal": 242,
+    "knipoog": "Meer dan een frikandel. En hij past in je broekzak."
+  },
+  {
+    "snack": "Een glas wijn",
+    "portie": "150 ml",
+    "grens": 1,
+    "kcal": 114,
+    "knipoog": "Eén glas valt mee. Het blijft alleen zelden bij één."
+  },
+  {
+    "snack": "Een diep bord krokante muesli",
+    "portie": "67 gram, zonder melk",
+    "grens": 1,
+    "kcal": 304,
+    "knipoog": "Krokant betekent meestal: gebakken met olie en suiker."
+  },
+  {
+    "snack": "Een tompouce",
+    "portie": "85 gram",
+    "grens": 2,
+    "kcal": 268,
+    "knipoog": "Room, glazuur en bladerdeeg. En toch nog geen twee."
+  },
+  {
+    "snack": "Een speciaalbiertje",
+    "portie": "330 ml",
+    "grens": 1,
+    "kcal": 211,
+    "knipoog": "Speciaal is het zeker. Licht niet."
+  },
+  {
+    "snack": "Een chocoladeletter",
+    "portie": "135 gram",
+    "grens": 3,
+    "kcal": 740,
+    "knipoog": "Vier frikandellen, en dat voor één letter."
+  }
+]
