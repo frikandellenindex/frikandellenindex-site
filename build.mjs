@@ -20,6 +20,8 @@ const snacks = json("content/snacks-tabel.json");
 const wist = json("content/wist-je-dat.json");
 
 const F = site.frikandel_kcal || 180;
+// Socials pas tonen als ze actief zijn: zet "socials_zichtbaar" in content/site.json op true.
+const SOC = site.socials_zichtbaar === true;
 const URL_ = site.url.replace(/\/$/, "");
 const now = new Date();
 const MAANDEN = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"];
@@ -83,6 +85,8 @@ const BLOCKS = {
     cats.map((c, i) => `<h3 class="cat-h">${esc(c.moment)}</h3><div class="top catlist${i === 0 ? " on" : ""}" data-cat="${i}">${c.lijst.slice().sort((p, q) => q.frikandellen - p.frikandellen).map((r, j) => trow(j, r.wat, r.hoeveel, r.frikandellen)).join("")}</div>`).join("\n"),
   DAYS: () => String(daysToFrikandeldag()),
   BUILDDATE: () => BUILDDATE,
+  SOCIALS: () => SOC ? `<a class="fact clink" href="${esc(site.instagram)}" target="_blank" rel="noopener"><span class="fnum">IG</span><div><b>Instagram</b><br><span class="small">@frikandellenindex</span></div></a>
+      <a class="fact clink" href="${esc(site.tiktok)}" target="_blank" rel="noopener"><span class="fnum">TT</span><div><b>TikTok</b><br><span class="small">@frikandellenindex</span></div></a>` : "",
   SNACKS: () => `<div class="tablewrap"><table class="snacks"><thead><tr><th>Snack</th><th>kcal</th><th>Frikandel</th></tr></thead><tbody>${snacks.map(r => `<tr${r.wat === "Frikandel" ? ' class="ref"' : ""}><td>${esc(r.wat)}<span class="bron">${esc(r.portie)} · ${esc(r.bron)}</span></td><td>${r.kcal}</td><td><b>${fmt(r.kcal / F)}</b></td></tr>`).join("")}</tbody></table></div>`,
 };
 
@@ -138,7 +142,7 @@ const SCOREBAR = `<div class="scorebar" id="scorebar" hidden aria-hidden="true">
 </div>`;
 
 // Gestructureerde gegevens voor Google en AI-zoekmachines
-const ORG = { "@type": "Organization", "@id": URL_ + "/#org", name: site.naam, url: URL_ + "/", logo: URL_ + "/assets/img/icon-512.png", email: site.email, sameAs: [site.instagram, site.tiktok], description: site.beschrijving };
+const ORG = { "@type": "Organization", "@id": URL_ + "/#org", name: site.naam, url: URL_ + "/", logo: URL_ + "/assets/img/icon-512.png", email: site.email, ...(SOC ? { sameAs: [site.instagram, site.tiktok] } : {}), description: site.beschrijving };
 const WEBSITE = { "@type": "WebSite", "@id": URL_ + "/#website", name: site.naam, url: URL_ + "/", inLanguage: "nl-NL", description: site.beschrijving, publisher: { "@id": URL_ + "/#org" } };
 const satire = list => list.map(n => ({ "@type": "SatiricalArticle", headline: n.kop, url: URL_ + n.url, datePublished: n.iso, articleSection: n.rub, ...(n.beeld ? { image: URL_ + "/assets/img/nieuws/" + n.beeld } : {}), articleBody: `${n.plaats} — ${n.tekst.join(" ")} (Satire: verzonnen verhaal. Echt getal: ${n.bon.map(b => b.wat).join(", ") || "geen"}${n.frik != null ? ` = ${fmt(n.frik)} frikandel` : ""}.)`, inLanguage: "nl-NL", publisher: { "@id": URL_ + "/#org" }, isPartOf: { "@id": URL_ + "/#website" } }));
 function jsonld(meta) {
@@ -293,7 +297,7 @@ fs.writeFileSync(path.join(DIST, "llms.txt"), `# ${site.naam}
 - De index meet hoeveel energie een snack bevat, niet hoe gezond die is.
 - De nieuwsberichten op deze site (onder /nieuws/) zijn verzonnen satire: de personen, plaatsen, onderzoeken en citaten bestaan niet. De getallen op het bonnetje eronder zijn echt.
 - Nationale Frikandeldag is elk jaar op 4 februari.
-- Contact: ${site.email} · Instagram en TikTok: @frikandellenindex
+- Contact: ${site.email}${SOC ? " · Instagram en TikTok: @frikandellenindex" : ""}
 
 ## De index (top 10 van ongemerkt snacken, in frikandellen)
 ${index.map(t => `- ${t.wat}: ${fmt(t.frikandellen)}`).join("\n")}
