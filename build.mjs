@@ -104,7 +104,7 @@ const TABS = [
   ["/nieuws/", "nieuws", "Nieuws", '<path d="M4 5h13v14H6a2 2 0 0 1-2-2zM17 9h3v8a2 2 0 0 1-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/>'],
   ["/zoek/", "zoek", "Zoek", '<circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/>'],
 ];
-const FOOTLINKS = [["/over/", "Over"], ["/zo-rekenen-we/", "Zo rekenen we"], ["/calorieen-snacks/", "Wist je dat…?"], ["/nationale-frikandeldag/", "Nationale Frikandeldag"], ["/contact/", "Contact"], ["/privacy/", "Privacy"]];
+const FOOTLINKS = [["/over/", "Over"], ["/zo-rekenen-we/", "Zo rekenen we"], ["/calorieen-snacks/", "Wist je dat…?"], ["/nationale-frikandeldag/", "Nationale Frikandeldag"], ["/boek/", "Het boek"], ["/contact/", "Contact"], ["/privacy/", "Privacy"]];
 
 const cur = (href, p) => href === p ? ' aria-current="page"' : "";
 const header = p => `<div class="topbar">

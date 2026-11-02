@@ -393,3 +393,45 @@ table.letters td:first-child,table.letters th:first-child{text-align:left}
 .post .post-n b{font-family:var(--display);font-weight:400;font-size:1rem;letter-spacing:0;margin-right:3px;font-size:1rem}
 
 .cta-sub{font-size:.92rem;color:var(--muted);margin-top:-6px;max-width:34ch}
+
+/* boekpagina /boek/ */
+.sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.boek{display:flex;flex-direction:column;gap:40px}
+.boek-kop{display:flex;flex-direction:column;gap:12px}
+.boek-titel{font-size:clamp(2.4rem,11vw,3.8rem)}
+.boek-titel em{font-style:normal;color:var(--curry)}
+.boek-sub{margin:0;font-size:1.2rem;font-weight:600;line-height:1.3;max-width:28ch}
+.boek-stempel{margin-top:4px;font-size:.78rem;padding:8px 14px}
+.omslagen{display:grid;grid-template-columns:1fr;gap:20px;justify-items:center;margin:0}
+.omslagen figure{margin:0}
+.omslag-voor img{display:block;width:min(70vw,400px);height:auto;border-radius:3px;box-shadow:0 18px 36px -18px rgba(42,26,18,.55),0 2px 6px rgba(42,26,18,.15)}
+.achter-knop{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--ink);cursor:zoom-in}
+.achter-knop img{display:block;width:140px;height:auto;border-radius:3px;box-shadow:0 10px 22px -12px rgba(42,26,18,.55);transform:rotate(2deg);transition:transform .2s}
+.achter-knop:hover img,.achter-knop:focus-visible img{transform:rotate(0)}
+.achter-label{font:700 .95rem var(--body);border:2px solid var(--ink);border-radius:4px;padding:8px 14px}
+@media (min-width:600px){
+  .omslagen{grid-template-columns:auto auto;align-items:end;justify-content:center;gap:28px}
+  .omslag-voor img{width:400px}
+  .achter-knop img{width:160px}
+}
+.flap{display:flex;flex-direction:column;gap:14px}
+.flap p{margin:0}
+.flap-kop{font-family:var(--display);font-size:clamp(1.5rem,6vw,2rem);line-height:1.08;text-wrap:balance}
+.flap-kop em{font-style:normal;color:var(--curry);display:block;margin-top:6px}
+.flap-vragen{font-weight:700;color:var(--curry);font-size:1.08rem}
+.flap-slot{font-weight:800;font-size:1.1rem;border-top:2.5px solid var(--ink);padding-top:14px}
+.maanden{list-style:none;margin:0;padding:0;border-top:2.5px solid var(--ink)}
+.maanden li{border-bottom:1px solid var(--line)}
+.maanden li,.maanden a{display:grid;grid-template-columns:6.5rem 1fr auto;align-items:baseline;gap:10px}
+.maanden li{padding:12px 2px}
+.maanden a{grid-column:1/-1;margin:-12px -2px;padding:12px 2px;text-decoration:none;color:inherit}
+.maanden .mnd{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.maanden .mom{font-weight:700;font-size:1.05rem}
+.maanden .pijl{color:var(--curry);font-weight:800}
+.maanden a:hover .mom,.maanden a:focus-visible .mom{color:var(--curry)}
+.volg p{margin:0}
+.lightbox{padding:0;border:0;background:transparent;max-width:min(92vw,620px);max-height:92vh;overflow:visible}
+.lightbox::backdrop{background:rgba(22,16,12,.86)}
+.lightbox img{display:block;width:auto;height:auto;max-width:min(92vw,620px);max-height:88vh;border-radius:3px}
+.lb-sluit{position:absolute;top:-14px;right:-14px;width:44px;height:44px;border-radius:50%;border:0;background:#FFF5DA;color:#2A1A12;font:700 1.7rem/1 var(--body);cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+@media (max-width:520px){.lb-sluit{top:6px;right:6px}}

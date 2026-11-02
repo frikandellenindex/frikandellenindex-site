@@ -314,4 +314,17 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
       catch(e){ if(ok) ok.textContent=url; }
     });
   });
+
+/* Boekpagina: achterkant groot bekijken (lightbox). Zonder JavaScript opent de link gewoon de afbeelding. */
+const lb=document.getElementById("lightbox");
+if(lb && typeof lb.showModal==="function"){
+  const lbImg=lb.querySelector("img");
+  let terug=null;
+  document.querySelectorAll("[data-lightbox]").forEach(a=>a.addEventListener("click",e=>{
+    e.preventDefault(); terug=a; lbImg.src=a.getAttribute("href"); lb.showModal(); lb.querySelector(".lb-sluit").focus(); try{ if(window.goatcounter && window.goatcounter.count) window.goatcounter.count({path:"boek-achterkant",title:"boek-achterkant",event:true}); }catch(err){}
+  }));
+  lb.querySelector(".lb-sluit").addEventListener("click",()=>lb.close());
+  lb.addEventListener("click",e=>{ if(e.target===lb) lb.close(); });
+  lb.addEventListener("close",()=>{ if(terug) terug.focus(); });
+}
 })();
