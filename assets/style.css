@@ -420,16 +420,11 @@ table.letters td:first-child,table.letters th:first-child{text-align:left}
 .flap-kop em{font-style:normal;color:var(--curry);display:block;margin-top:6px}
 .flap-vragen{font-weight:700;color:var(--curry);font-size:1.08rem}
 .flap-slot{font-weight:800;font-size:1.1rem;border-top:2.5px solid var(--ink);padding-top:14px}
-.maanden{list-style:none;margin:0;padding:0;border-top:2.5px solid var(--ink)}
-.maanden li{border-bottom:1px solid var(--line)}
-.maanden li,.maanden a{display:grid;grid-template-columns:6.5rem 1fr auto;align-items:baseline;gap:10px}
-.maanden li{padding:12px 2px}
-.maanden a{grid-column:1/-1;margin:-12px -2px;padding:12px 2px;text-decoration:none;color:inherit}
-.maanden .mnd{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.maanden .mom{font-weight:700;font-size:1.05rem}
-.maanden .pijl{color:var(--curry);font-weight:800}
-.maanden a:hover .mom,.maanden a:focus-visible .mom{color:var(--curry)}
-.volg p{margin:0}
+.momenten{list-style:none;margin:0;padding:0;border-top:2.5px solid var(--ink)}
+.momenten li{padding:16px 2px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.mlabel{font-family:var(--mono);font-size:.76rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--curry)}
+.momenten p{margin:0;font-size:1.25rem;font-weight:700;line-height:1.3;text-wrap:balance}
+.greep-slot{margin:4px 0 0;font-size:1.1rem;font-weight:600}
 .lightbox{padding:0;border:0;background:transparent;max-width:min(92vw,620px);max-height:92vh;overflow:visible}
 .lightbox::backdrop{background:rgba(22,16,12,.86)}
 .lightbox img{display:block;width:auto;height:auto;max-width:min(92vw,620px);max-height:88vh;border-radius:3px}
