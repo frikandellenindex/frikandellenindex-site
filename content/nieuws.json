@@ -204,5 +204,32 @@
   ],
   "bon": [],
   "noot": "Geen getal. Wij rekenen alles wat je pakt. Ook van andermans bord."
+ },
+ {
+  "slug": "stand-onthouden-chips-niet",
+  "datum": "2026-11-15",
+  "moment": "tv",
+  "plaats": "HARLINGEN",
+  "kop": "Vrienden kennen wedstrijd tot op de minuut, maar weten niet waar de chips zijn gebleven",
+  "tekst": [
+   "Twee vrienden die zaterdagavond samen een spannende wedstrijd keken, kunnen het verloop tot op de minuut navertellen. Wat er met de zak chips is gebeurd, kunnen ze niet.",
+   "“De 1-0 viel in de 23e minuut, uit een hoekschop die er nooit had mogen zijn”, zegt een van de twee. “Toen was de zak nog vol. Dat weet ik zeker.”",
+   "Bij het rustsignaal bleek de zak leeg. Wie hem had leeggegeten, wist geen van beiden.",
+   "Op hun verzoek heeft de VAR de beelden van de bank bekeken. Die zag geen duidelijke en evidente fout, maar kon ook niet vaststellen wie het laatste handje had genomen.",
+   "In de rust ging er bewust een nieuwe zak open. Over de tweede helft zijn de vrienden het eens: 2-1, gewonnen.",
+   "De wedstrijd is inmiddels beslist. Over de tweede zak loopt het onderzoek nog."
+  ],
+  "bon_titel": "Eerste helft, per persoon",
+  "bon": [
+   {
+    "wat": "½ zak chips naturel (112 g)",
+    "kcal": 606
+   },
+   {
+    "wat": "1 biertje (flesje 300 ml)",
+    "kcal": 132
+   }
+  ],
+  "noot": "Uitgaande van eerlijk delen. Tweede helft niet meegeteld."
  }
 ]

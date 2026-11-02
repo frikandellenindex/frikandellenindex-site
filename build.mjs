@@ -235,7 +235,7 @@ function artikel(n) {
   <header class="art-head"><a class="rub" href="${n.rubLink}">${esc(n.rub)}</a><h1 class="h2">${esc(n.kop)}</h1><p class="art-meta"><time datetime="${n.iso}">${esc(n.datum)}</time></p></header>
   <figure class="art-beeld">${n.beeld ? foto(n, false) + `<figcaption>${esc(n.beeld_bron || "Beeld: AI")}</figcaption>` : kaart(n, false)}</figure>
   <div class="art-tekst">${n.tekst.map((p, i) => `<p>${i === 0 ? `<b class="plaats">${esc(n.plaats)}</b> — ` : ""}${esc(p)}</p>`).join("")}</div>
-  <div class="bon art-bon" role="group" aria-label="Bonnetje bij dit bericht"><div class="bon-h"><b>SNACKBAR DE INDEX</b><span>${esc(n.rub)}</span></div>${rows}<div class="bon-f">${esc(n.noot)}</div></div>
+  <div class="bon art-bon" role="group" aria-label="Bonnetje bij dit bericht"><div class="bon-h"><b>SNACKBAR DE INDEX</b><span>${esc(n.bon_titel || n.rub)}</span></div>${rows}<div class="bon-f">${esc(n.noot)}</div></div>
   <div class="art-acties"><a class="cta" href="${n.rubLink}">${esc(n.cta)}</a><button type="button" class="deel" data-deel="${esc(n.slug)}">Deel dit bericht</button><span class="deel-ok small" role="status"></span></div>
   <section class="stack meer" aria-labelledby="h-meer"><div class="sechead"><span class="eyebrow">Laatste nieuws</span><h2 id="h-meer">${zelfde.length ? `Meer over: ${esc(n.rub.toLowerCase())}` : "Meer nieuws"}</h2></div><div class="news">${meer.map(newsItem).join("")}</div></section>
 </article>`;
