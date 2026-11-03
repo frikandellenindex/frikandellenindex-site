@@ -233,5 +233,30 @@
   "noot": "Uitgaande van eerlijk delen. Tweede helft niet meegeteld.",
   "beeld": "stand-onthouden-chips-niet.jpg",
   "beeld_alt": "Twee mannen zitten lachend op de bank voor een televisie met een voetbalwedstrijd. Op de salontafel ligt een lege, opengescheurde zak chips tussen de kruimels, naast een afstandsbediening en twee bierflesjes."
+ },
+ {
+  "slug": "frikandel-in-teams",
+  "datum": "2026-11-03",
+  "moment": "werk",
+  "plaats": "ZWOLLE",
+  "kop": "Collega verschijnt met frikandel in Teams, overleg gaat nergens anders meer over",
+  "tekst": [
+   "Een online overleg over de kwartaalplanning is dinsdagmiddag ontspoord nadat een deelnemer om vier uur met een frikandel in beeld verscheen.",
+   "Volgens aanwezigen verliep het eerste agendapunt nog volgens plan. Daarna ging het twintig minuten alleen nog over de frikandel. Er werden drie screenshots gemaakt.",
+   "De man begrijpt de ophef niet. “Ik had de hele middag vergaderd. Dan mag je toch iets eten?”",
+   "Een collega die tijdens hetzelfde overleg twee stroopwafels at, kwam niet ter sprake. “Een stroopwafel hoort bij de koffie”, zegt hij. “Daar begin je toch niet over.”"
+  ],
+  "bon_titel": "Overleg 16.00 uur",
+  "bon": [
+   {
+    "wat": "1 frikandel (in beeld)",
+    "kcal": 180
+   },
+   {
+    "wat": "2 stroopwafels (buiten beeld)",
+    "kcal": 360
+   }
+  ],
+  "noot": "Besproken: 1,0. Niet besproken: 2,0."
  }
 ]
