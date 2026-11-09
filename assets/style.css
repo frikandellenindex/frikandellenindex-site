@@ -131,7 +131,8 @@ main{padding-block:24px calc(110px + env(safe-area-inset-bottom,0px))}
 .next-q{font-weight:700;color:var(--board-ink)}
 .next-a{color:var(--mayo);font-size:.95rem;min-height:1.2em}
 .kcal{font-family:var(--mono);font-size:.78rem;color:var(--board-muted)}
-.reset{align-self:flex-start;font:600 .9rem var(--body);background:none;border:0;color:var(--board-muted);text-decoration:underline;cursor:pointer;padding:0}
+.reset{align-self:flex-start;font:600 .9rem var(--body);background:none;border:0;color:var(--board-muted);text-decoration:underline;cursor:pointer;padding:0;min-height:44px}
+.step button[aria-disabled="true"]{opacity:.35;cursor:default}
 .share{display:flex;flex-direction:column;gap:12px;border-top:1px dashed var(--board-line);padding-top:18px}
 .cardprev{background:var(--mayo);color:#2A1A12;border-radius:6px;padding:22px;display:flex;flex-direction:column;gap:10px;aspect-ratio:1/1;max-width:340px;width:100%;justify-content:space-between}
 .cardprev .big{font-family:var(--display);font-size:clamp(1.5rem,7vw,2.1rem);line-height:1.05;text-wrap:balance}

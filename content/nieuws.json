@@ -191,19 +191,27 @@
  {
   "slug": "calorieen-andermans-bord",
   "terug": 20,
-  "moment": "onderzoek",
+  "moment": "verjaardag",
   "plaats": "APELDOORN",
-  "kop": "Onderzoek: calorieën van andermans bord worden structureel onderschat",
+  "kop": "Wie van andermans gebak proeft, heeft volgens eigen zeggen niets gegeten",
   "tekst": [
-   "Mensen laten eten van andermans bord aanzienlijk minder zwaar meewegen dan eten dat ze zelf hebben besteld. Dat blijkt uit onderzoek naar eetgedrag aan de keukentafel.",
-   "Vooral frietjes, het laatste puntje pizza en de restjes van kindermaaltijden blijken lastig te registreren.",
-   "Volgens de onderzoekers speelt het eigendomsprincipe een grote rol. “Wie zelf niets heeft besteld, ervaart wat hij eet niet als een eetmoment.”",
-   "Deelnemers verklaarden dat ze alleen proefden, hielpen met opeten of voorkwamen dat er iets werd weggegooid.",
-   "Een opvallend aantal vond dat de calorieën eigenlijk bij de oorspronkelijke eigenaar van het bord hoorden te blijven.",
-   "Toen de onderzoekers uitlegden dat de energie-inname daar niet door verandert, vroegen verschillende deelnemers of de berekening daarop kon worden aangepast."
+   "Wie een hap van andermans gebak neemt, telt dat zelf niet als eten. Dat blijkt uit onderzoek naar gedrag op verjaardagen.",
+   "Vooral de punt van de tompouce, het randje van de appeltaart en de laatste hap slagroomtaart blijken lastig te registreren.",
+   "Volgens de onderzoekers speelt het eigendomsprincipe een grote rol. “Wie zelf niets op zijn bordje heeft, ervaart wat hij eet niet als een eetmoment.”",
+   "Deelnemers verklaarden dat ze alleen proefden, hielpen met opeten of voorkwamen dat er iets werd weggegooid. Een opvallend aantal vond dat de calorieën bij de eigenaar van het gebak hoorden te blijven.",
+   "Toen de onderzoekers uitlegden dat de energie daar niet door verandert, vroegen verschillende deelnemers of ze nog een klein stukje mochten proeven. Ter controle."
   ],
-  "bon": [],
-  "noot": "Geen getal. Wij rekenen alles wat je pakt. Ook van andermans bord."
+  "bon": [
+   {
+    "wat": "½ tompouce (niet de jouwe)",
+    "kcal": 134
+   },
+   {
+    "wat": "½ punt slagroomtaart (ook niet)",
+    "kcal": 158
+   }
+  ],
+  "noot": "Alleen geproefd."
  },
  {
   "slug": "stand-onthouden-chips-niet",

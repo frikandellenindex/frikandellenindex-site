@@ -87,7 +87,7 @@ document.addEventListener("click",e=>{ const b=e.target.closest(".meerbtn"); if(
   function renderM(){
     $("tagline").textContent=MO[moment].tagline;
     let lastG=null;
-    $("list").innerHTML=rows().map(([name,k,g,grp],i)=>{ const G=i>=ITEMS[moment].length?"Zelf toegevoegd":(grp||""); const head=G&&G!==lastG?`<h3 class="grp">${esc(G)}</h3>`:""; lastG=G; return head+`<div class="row"><div class="name">${esc(name)}<span>${esc(g)} · ${fmt(k/F)} frikandel</span></div><div class="step"><button type="button" id="min-${moment}-${i}" data-i="${i}" data-d="-1" aria-label="${esc(name)} min één">−</button><output id="c-${i}">${counts[i]||0}</output><button type="button" id="plus-${moment}-${i}" data-i="${i}" data-d="1" aria-label="${esc(name)} plus één">+</button></div></div>`; }).join("");
+    $("list").innerHTML=rows().map(([name,k,g,grp],i)=>{ const G=i>=ITEMS[moment].length?"Zelf toegevoegd":(grp||""); const head=G&&G!==lastG?`<h3 class="grp">${esc(G)}</h3>`:""; lastG=G; return head+`<div class="row"><div class="name">${esc(name)}<span>${esc(g)} · ${fmt(k/F)} frikandel</span></div><div class="step"><button type="button" id="min-${moment}-${i}" data-i="${i}" data-d="-1" aria-label="${esc(name)} min één"${counts[i]?"":' aria-disabled="true"'}>−</button><output id="c-${i}">${counts[i]||0}</output><button type="button" id="plus-${moment}-${i}" data-i="${i}" data-d="1" aria-label="${esc(name)} plus één">+</button></div></div>`; }).join("");
     render();
   }
   function joke(n){
@@ -121,7 +121,7 @@ document.addEventListener("click",e=>{ const b=e.target.closest(".meerbtn"); if(
   function tabFade(){ const w=$("mtabs"), more=w.scrollWidth>w.clientWidth+1; w.classList.toggle("more-r", more && w.scrollLeft+w.clientWidth<w.scrollWidth-2); w.classList.toggle("more-l", more && w.scrollLeft>2); }
   $("mtabs").addEventListener("scroll",tabFade,{passive:true}); window.addEventListener("resize",tabFade);
   $("mtabs").addEventListener("click",e=>{const b=e.target.closest("button"); if(b && b.dataset.m!==moment) load(b.dataset.m);});
-  $("list").addEventListener("click",e=>{const b=e.target.closest("button"); if(!b) return; const i=+b.dataset.i; counts[i]=Math.max(0,(counts[i]||0)+ +b.dataset.d); $("c-"+i).textContent=counts[i]; if(!touched){ touched=true; track("calculator-gebruikt"); } render();});
+  $("list").addEventListener("click",e=>{const b=e.target.closest("button"); if(!b) return; const i=+b.dataset.i; counts[i]=Math.max(0,(counts[i]||0)+ +b.dataset.d); $("c-"+i).textContent=counts[i]; const mb=$("min-"+moment+"-"+i); if(mb){ if(counts[i]) mb.removeAttribute("aria-disabled"); else mb.setAttribute("aria-disabled","true"); } if(!touched){ touched=true; track("calculator-gebruikt"); } render();});
   $("reset").addEventListener("click",()=>{counts={}; extras=[]; renderM();});
 
   /* Staat jouw snack er niet bij? */
@@ -209,7 +209,8 @@ document.addEventListener("click",e=>{ const b=e.target.closest(".meerbtn"); if(
   /* Scorebalk onderin */
   let resultInView=false;
   function updateBar(){ $("scorebar").hidden=!(total()>0 && !resultInView); }
-  try{ new IntersectionObserver(es=>{ resultInView=es[0].isIntersecting; updateBar(); },{threshold:0.2}).observe($("n")); }catch(e){}
+  /* Totaalbalk weg zodra het resultaat, het delen of de voettekst in beeld is */
+  try{ const seen=new Map(); const io=new IntersectionObserver(es=>{ es.forEach(e=>seen.set(e.target,e.isIntersecting)); resultInView=[...seen.values()].some(Boolean); updateBar(); },{threshold:0}); [$("n"),$("bon"),$("share"),document.querySelector("footer")].forEach(el=>{ if(el) io.observe(el); }); }catch(e){}
   $("sbgo").addEventListener("click",()=>$("n").scrollIntoView({behavior:"smooth",block:"center"}));
   function setTabH(){ const t=document.querySelector(".tabbar"); if(t) document.documentElement.style.setProperty("--tabh", t.offsetHeight+"px"); }
   window.addEventListener("resize",setTabH); setTabH();

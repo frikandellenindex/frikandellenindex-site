@@ -276,7 +276,7 @@ function wistPage(w) {
     <a class="cta" href="/reken/?moment=${m.id}">${esc(ctaTekst(m))} →</a>
     ${w.links.map(([h, t]) => `<a class="link" href="${h}">${esc(t)} →</a>`).join("")}
     <a class="link" href="/calorieen-snacks/">Meer weetjes: alle snacks in frikandellen →</a>
-    <p class="small">Energie volgens NEVO-online 2025/9.0 (RIVM). Porties volgens RIVM Portie-online of het winkelgewicht. De index meet hoeveel, niet hoe gezond. <a class="link" href="/zo-rekenen-we/">Zo rekenen we →</a><br>Bijgewerkt: oktober 2026</p>
+    <p class="small">Energie volgens NEVO-online 2025/9.0 (RIVM). Porties volgens RIVM Portie-online of het winkelgewicht. De index meet hoeveel, niet hoe gezond. <a class="link" href="/zo-rekenen-we/">Zo rekenen we →</a><br>Bijgewerkt: ${esc(w.bijgewerkt || "oktober 2026")}</p>
   </article>`;
   return render({ title: `${vraag} | ${site.naam}`, description: plat(w.antwoord).slice(0, 155), path: `/calorieen-${w.slug}/`, tab: "", faq: [[vraag, plat(w.antwoord)], ...w.extra] }, body);
 }
