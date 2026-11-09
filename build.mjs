@@ -65,10 +65,10 @@ function daysToFrikandeldag() {
 const ICON = (cls, size) => `<svg class="${cls}" width="${size}" height="${size}" aria-hidden="true" viewBox="0 0 200 200"><circle cx="100" cy="100" r="100" fill="#C2362B"/><g transform="translate(100 106) rotate(-20)"><path d="M-84,14 L84,14 L76,36 L-76,36 Z" fill="#E6E1D6" stroke="#2A1A12" stroke-width="9" stroke-linejoin="round"/><rect x="-94" y="-32" width="188" height="50" rx="13" fill="#FFFFFF" stroke="#2A1A12" stroke-width="9"/><rect x="-78" y="-18" width="156" height="28" rx="14" fill="#7A4425"/></g></svg>`;
 
 const POSTS = [
-  ["/blog/hoeveel-frikandellen-eet-jij/", "Hoeveel frikandellen eet jij zonder dat je het doorhebt?", "Het idee achter De Frikandellenindex. Over borrelnoten, schoonmoeders en stroopwafels om vier uur.", "6,1"],
+  ["/blog/hoeveel-frikandellen-eet-jij/", "Hoeveel frikandellen eet jij zonder dat je het doorhebt?", "Het idee achter De Frikandellenindex. Over borrelnoten, schoonmoeders en stroopwafels om vier uur.", "5,9"],
   ["/blog/avondje-sinterklaas/", "Hoeveel frikandellen zitten er in een avondje Sinterklaas?", "Kruidnoten, een stukje letter en de schaal die maar niet leeg raakt. Het heerlijk avondje, omgerekend.", "3,2"],
   ["/blog/grote-zak-chips/", "Waarom je uit een grote zak chips meer eet dan uit een schaaltje", "De chips zijn hetzelfde, alleen de zak is groter. Wat onderzoek zegt over verpakkingen.", "6,8"],
-  ["/blog/millennials-snacken/", "Nederlandse millennials snacken gemiddeld 4,5 keer per dag", "Onderzoek van WUR. En waarom snacken niet automatisch ongezond is.", "4,2"],
+  ["/blog/millennials-snacken/", "Nederlandse millennials snacken gemiddeld 4,5 keer per dag", "Onderzoek van WUR. En waarom snacken niet automatisch ongezond is.", "3,9"],
   ["/blog/vier-op-de-tien/", "Vier op de tien Nederlanders eten elke dag iets wat ze niet van plan waren", "Wat onderzoek zegt over ongepland snacken. En waarom we per moment rekenen."],
   ["/blog/waarom-de-frikandel/", "Waarom uitgerekend de frikandel?", "De snack met de slechtste naam, en waarom dat werkt.", "3,0"],
   ["/zo-rekenen-we/", "Zo rekenen we", "Bronnen, porties en wat niet in de index komt."],
