@@ -55,9 +55,9 @@
           "groep": "Kaas, worst en hapjes"
         },
         {
-          "naam": "Plakje droge worst of salami",
-          "kcal": 31.4,
-          "portie": "8 g",
+          "naam": "Stukje droge worst",
+          "kcal": 47.0,
+          "portie": "12 g",
           "groep": "Kaas, worst en hapjes"
         },
         {
@@ -172,9 +172,9 @@
           "groep": "Hapjes"
         },
         {
-          "naam": "Plakje droge worst of salami",
-          "kcal": 31.4,
-          "portie": "8 g",
+          "naam": "Stukje droge worst",
+          "kcal": 47.0,
+          "portie": "12 g",
           "groep": "Hapjes"
         },
         {
@@ -653,9 +653,9 @@
           "groep": "Nootjes, chips en kaas"
         },
         {
-          "naam": "Plakje droge worst of salami",
-          "kcal": 31.4,
-          "portie": "8 g",
+          "naam": "Stukje droge worst",
+          "kcal": 47.0,
+          "portie": "12 g",
           "groep": "Nootjes, chips en kaas"
         },
         {
@@ -1099,6 +1099,11 @@
       "naam": "Flesje sportdrank",
       "kcal": 115,
       "portie": "500 ml"
+    },
+    {
+      "naam": "Plakje salami",
+      "kcal": 31.4,
+      "portie": "8 g"
     }
   ]
 }
