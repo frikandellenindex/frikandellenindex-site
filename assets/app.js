@@ -46,6 +46,11 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
     document.querySelectorAll(".catlist").forEach(l=>l.classList.toggle("on", l.dataset.cat===b.dataset.cat)); });
 })();
 
+/* Homepage: top 10 per moment, eerst vijf tonen */
+document.addEventListener("click",e=>{ const b=e.target.closest(".meerbtn"); if(!b) return;
+  const l=b.closest(".catlist"), open=!l.classList.contains("open"); l.classList.toggle("open",open);
+  b.setAttribute("aria-expanded",String(open)); b.textContent=open?"Toon minder ↑":"Toon de hele top 10 ↓"; });
+
 /* Index: voorbeeldbonnetjes wisselen (alle bonnetjes staan al in de HTML) */
 (function(){
   const tabs=$("bontabs"); if(!tabs) return;

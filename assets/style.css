@@ -459,3 +459,6 @@ html.js .bonvb .h3{display:none}
 #een,#stuk,#optellen,#permoment{scroll-margin-top:72px}
 @media (max-width:599px){#bontabs,#cattabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:2px 16px 6px}#bontabs::-webkit-scrollbar,#cattabs::-webkit-scrollbar{display:none}#bontabs .chip,#cattabs .chip{flex:0 0 auto;white-space:nowrap}}
 .catlist .cta-s{margin-top:12px;align-self:flex-start;display:inline-block}
+html.js .catlist:not(.open) .trow.more{display:none}
+.meerbtn{display:none}
+html.js .meerbtn{display:inline-block;margin-top:8px;background:none;border:0;padding:6px 0;font:600 .95rem var(--body);color:var(--curry);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
