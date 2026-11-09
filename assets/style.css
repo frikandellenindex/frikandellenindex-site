@@ -462,3 +462,4 @@ html.js .bonvb .h3{display:none}
 html.js .catlist:not(.open) .trow.more{display:none}
 .meerbtn{display:none}
 html.js .meerbtn{display:block;margin-top:8px;background:none;border:0;padding:6px 0;font:600 .95rem var(--body);color:var(--curry);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+footer.src p{max-width:none}

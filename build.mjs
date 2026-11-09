@@ -138,7 +138,7 @@ ${MENU.map(([h, t, s]) => `      <a href="${h}"${cur(h, p)}>${esc(t)}<span>${esc
 const footer = () => `<footer class="src">
   <div class="f-brand">${ICON("f-ic", 36)}<div><b>${esc(site.naam)}</b><span>${esc(site.tagline)}</span></div></div>
   <nav class="flinks" aria-label="Meer">${FOOTLINKS.map(([h, t]) => `<a href="${h}">${esc(t)}<span aria-hidden="true">→</span></a>`).join("")}</nav>
-  <div class="f-small"><p>Bron: NEVO-online versie 2025/9.0, RIVM, Bilthoven. Porties en omrekening zijn een eigen aanvulling.</p><p>Indicatieve waarden. Een knipoog, geen voedingsadvies.</p></div>
+  <div class="f-small"><p>Energie: NEVO-online versie 2025/9.0, RIVM, Bilthoven. Porties: RIVM Portie-online of het winkelgewicht.</p><p>Indicatieve waarden. Een knipoog, geen voedingsadvies.</p></div>
   <p class="f-copy">© ${now.getFullYear()} ${esc(site.naam)} · Delen mag, graag met bronvermelding</p>
 </footer>`;
 const tabbar = tab => `<nav class="tabbar" aria-label="Hoofdmenu">
