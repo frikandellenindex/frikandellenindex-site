@@ -442,3 +442,19 @@ table.letters td:first-child,table.letters th:first-child{text-align:left}
 .list .grp{font:500 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mayo);margin:18px 0 0;padding-bottom:4px;border-bottom:1px dashed var(--board-line)}
 .list .grp:first-child{margin-top:8px}
 .list .row:has(+ .grp){border-bottom:0}
+
+/* De Frikandellenindex in drie rubrieken */
+.trow.norank{grid-template-columns:minmax(0,1fr) auto}
+.trow.norank .dels{grid-column:1 / 3}
+.jump{display:flex;flex-wrap:wrap;gap:8px}
+.jump a{font:600 .9rem var(--body);color:var(--ink);text-decoration:none;border:1.5px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--card)}
+.grp-h{font:500 .74rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:14px 0 0}
+.knipoog{font-style:italic;margin:4px 0 0}
+.bonvb{display:flex;flex-direction:column;gap:10px}
+.bonvb .h3{margin:6px 0 0}
+.bonvb .bon{align-self:flex-start;width:100%;max-width:380px}
+.bonvb .cta{align-self:flex-start}
+html.js .bonvb:not(.on){display:none}
+html.js .bonvb .h3{display:none}
+#een,#stuk,#optellen,#permoment{scroll-margin-top:72px}
+@media (max-width:599px){#bontabs,#cattabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:2px 16px 6px}#bontabs::-webkit-scrollbar,#cattabs::-webkit-scrollbar{display:none}#bontabs .chip,#cattabs .chip{flex:0 0 auto;white-space:nowrap}}

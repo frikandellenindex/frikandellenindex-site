@@ -13,21 +13,6 @@
         "frikandellen": 2.6
       },
       {
-        "wat": "2 speciaalbiertjes",
-        "hoeveel": "660 ml",
-        "frikandellen": 2.3
-      },
-      {
-        "wat": "3 biertjes",
-        "hoeveel": "900 ml",
-        "frikandellen": 2.2
-      },
-      {
-        "wat": "3 glazen wijn",
-        "hoeveel": "450 ml",
-        "frikandellen": 1.9
-      },
-      {
         "wat": "3 handjes Japanse mix",
         "hoeveel": "75 g",
         "frikandellen": 1.8
@@ -49,18 +34,13 @@
       },
       {
         "wat": "10 plakjes salami",
-        "hoeveel": "50 g",
-        "frikandellen": 1.1
-      }
-    ]
-  },
-  {
-    "moment": "Verjaardag",
-    "lijst": [
+        "hoeveel": "80 g",
+        "frikandellen": 1.7
+      },
       {
-        "wat": "3 handjes borrelnoten",
-        "hoeveel": "75 g",
-        "frikandellen": 2.2
+        "wat": "2 speciaalbiertjes",
+        "hoeveel": "660 ml",
+        "frikandellen": 2.3
       },
       {
         "wat": "3 biertjes",
@@ -71,6 +51,16 @@
         "wat": "3 glazen wijn",
         "hoeveel": "450 ml",
         "frikandellen": 1.9
+      }
+    ]
+  },
+  {
+    "moment": "Verjaardag",
+    "lijst": [
+      {
+        "wat": "3 handjes borrelnoten",
+        "hoeveel": "75 g",
+        "frikandellen": 2.2
       },
       {
         "wat": "Punt slagroomtaart",
@@ -99,13 +89,23 @@
       },
       {
         "wat": "8 plakjes salami",
-        "hoeveel": "40 g",
-        "frikandellen": 0.9
+        "hoeveel": "64 g",
+        "frikandellen": 1.4
       },
       {
-        "wat": "2 handjes olijven",
+        "wat": "20 olijven",
         "hoeveel": "80 g",
         "frikandellen": 0.5
+      },
+      {
+        "wat": "3 biertjes",
+        "hoeveel": "900 ml",
+        "frikandellen": 2.2
+      },
+      {
+        "wat": "3 glazen wijn",
+        "hoeveel": "450 ml",
+        "frikandellen": 1.9
       }
     ]
   },
@@ -138,11 +138,6 @@
         "frikandellen": 1.2
       },
       {
-        "wat": "2 chocolate chip cookies",
-        "hoeveel": "42 g",
-        "frikandellen": 1.2
-      },
-      {
         "wat": "Stroopwafel",
         "hoeveel": "38 g",
         "frikandellen": 1.0
@@ -153,13 +148,18 @@
         "frikandellen": 1.0
       },
       {
-        "wat": "Latte macchiato",
-        "hoeveel": "250 ml",
+        "wat": "Plakje rozijnencake",
+        "hoeveel": "30 g",
         "frikandellen": 0.6
       },
       {
-        "wat": "Plakje rozijnencake",
-        "hoeveel": "30 g",
+        "wat": "2 chocolate chip cookies",
+        "hoeveel": "42 g",
+        "frikandellen": 1.2
+      },
+      {
+        "wat": "Latte macchiato",
+        "hoeveel": "250 ml",
         "frikandellen": 0.6
       }
     ]
@@ -223,11 +223,6 @@
     "moment": "Avondje op de bank",
     "lijst": [
       {
-        "wat": "3 biertjes",
-        "hoeveel": "900 ml",
-        "frikandellen": 2.2
-      },
-      {
         "wat": "3 handjes Japanse mix",
         "hoeveel": "75 g",
         "frikandellen": 1.8
@@ -236,11 +231,6 @@
         "wat": "2 schaaltjes zoete popcorn",
         "hoeveel": "80 g",
         "frikandellen": 1.7
-      },
-      {
-        "wat": "2 blikjes cola",
-        "hoeveel": "660 ml",
-        "frikandellen": 1.5
       },
       {
         "wat": "6 pindarotsjes",
@@ -271,6 +261,16 @@
         "wat": "3 handjes kroepoek",
         "hoeveel": "30 g",
         "frikandellen": 0.9
+      },
+      {
+        "wat": "3 biertjes",
+        "hoeveel": "900 ml",
+        "frikandellen": 2.2
+      },
+      {
+        "wat": "2 blikjes cola",
+        "hoeveel": "660 ml",
+        "frikandellen": 1.5
       }
     ]
   },
@@ -313,11 +313,6 @@
         "frikandellen": 1.0
       },
       {
-        "wat": "Smoothie",
-        "hoeveel": "250 ml",
-        "frikandellen": 0.8
-      },
-      {
         "wat": "Mueslireep",
         "hoeveel": "25 g",
         "frikandellen": 0.6
@@ -326,22 +321,17 @@
         "wat": "2 doosjes rozijnen",
         "hoeveel": "28 g",
         "frikandellen": 0.5
+      },
+      {
+        "wat": "Smoothie",
+        "hoeveel": "250 ml",
+        "frikandellen": 0.8
       }
     ]
   },
   {
     "moment": "Sinterklaas en kerst",
     "lijst": [
-      {
-        "wat": "Chocoladeletter",
-        "hoeveel": "135 g",
-        "frikandellen": 4.1
-      },
-      {
-        "wat": "2 handjes chocoladekruidnoten",
-        "hoeveel": "70 g",
-        "frikandellen": 1.9
-      },
       {
         "wat": "4 speculaasjes",
         "hoeveel": "72 g",
@@ -358,16 +348,6 @@
         "frikandellen": 1.7
       },
       {
-        "wat": "Chocolademelk met slagroom",
-        "hoeveel": "250 ml + toef",
-        "frikandellen": 1.5
-      },
-      {
-        "wat": "2 glaasjes advocaat",
-        "hoeveel": "100 ml",
-        "frikandellen": 1.3
-      },
-      {
         "wat": "Plak gevulde speculaas",
         "hoeveel": "50 g",
         "frikandellen": 1.2
@@ -381,6 +361,26 @@
         "wat": "2 borstplaatjes",
         "hoeveel": "20 g",
         "frikandellen": 0.4
+      },
+      {
+        "wat": "Chocoladeletter",
+        "hoeveel": "135 g",
+        "frikandellen": 4.1
+      },
+      {
+        "wat": "2 handjes chocoladekruidnoten",
+        "hoeveel": "70 g",
+        "frikandellen": 1.9
+      },
+      {
+        "wat": "Chocolademelk met slagroom",
+        "hoeveel": "250 ml + toef",
+        "frikandellen": 1.5
+      },
+      {
+        "wat": "2 glaasjes advocaat",
+        "hoeveel": "100 ml",
+        "frikandellen": 1.3
       }
     ]
   }

@@ -1,0 +1,230 @@
+{
+  "intro": "Eén frikandel is 180 kcal. Hoe ziet dat eruit bij de koffie, op de borrel en op de bank?",
+  "een": {
+    "titel": "Dit is óók één frikandel",
+    "vraag": "Hoeveel koekjes, kaas of borrelnoten is evenveel energie als één frikandel? Ongeveer zoveel:",
+    "knipoog": "Niemand eet een frikandel bij de koffie. Een stroopwafel wel.",
+    "noot": "De index meet hoeveel, niet hoe gezond.",
+    "items": [
+      {
+        "aantal": "1",
+        "wat": "stroopwafel",
+        "hoeveel": "38 g",
+        "moment": "Bij de koffie",
+        "kcal": 180
+      },
+      {
+        "aantal": "4",
+        "wat": "roomboterkoekjes",
+        "hoeveel": "4 × 10 g",
+        "moment": "Bij de koffie",
+        "kcal": 180
+      },
+      {
+        "aantal": "1",
+        "wat": "pakje fruitbiscuits",
+        "hoeveel": "3 koekjes, 44 g",
+        "moment": "Op je werk",
+        "kcal": 174
+      },
+      {
+        "aantal": "2",
+        "wat": "rijstwafels met chocolade",
+        "hoeveel": "2 × 17 g",
+        "moment": "Tussendoor",
+        "kcal": 170
+      },
+      {
+        "aantal": "2",
+        "wat": "glazen sinaasappelsap",
+        "hoeveel": "2 × 200 ml",
+        "moment": "Tussendoor",
+        "kcal": 180
+      },
+      {
+        "aantal": "1½",
+        "wat": "glas wijn",
+        "hoeveel": "225 ml",
+        "moment": "Op de borrel",
+        "kcal": 171.0
+      },
+      {
+        "aantal": "1½",
+        "wat": "handje borrelnoten",
+        "hoeveel": "± 38 g",
+        "moment": "Op de borrel",
+        "kcal": 199.5
+      },
+      {
+        "aantal": "5",
+        "wat": "blokjes kaas",
+        "hoeveel": "5 × 10 g",
+        "moment": "Op de borrel",
+        "kcal": 190
+      },
+      {
+        "aantal": "3",
+        "wat": "handjes chips",
+        "hoeveel": "3 × 10 g",
+        "moment": "Op de bank",
+        "kcal": 162.3
+      },
+      {
+        "aantal": "2",
+        "wat": "handjes M&M's",
+        "hoeveel": "2 × 17 g",
+        "moment": "Op de bank",
+        "kcal": 174
+      }
+    ]
+  },
+  "stuk": {
+    "titel": "Eén koek. Eén reep. Eén glas.",
+    "vraag": "Je pakt er één. Hoeveel frikandellen zijn dat eigenlijk?",
+    "knipoog": "Eén is één. Behalve bij een gevulde koek.",
+    "groepen": [
+      {
+        "naam": "Bij de koffie",
+        "items": [
+          {
+            "wat": "1 gevulde koek",
+            "hoeveel": "74 g",
+            "kcal": 304
+          },
+          {
+            "wat": "1 tompouce",
+            "hoeveel": "85 g",
+            "kcal": 268
+          },
+          {
+            "wat": "1 cappuccino",
+            "hoeveel": "kopje, 125 ml",
+            "kcal": 38.8
+          },
+          {
+            "wat": "1 latte macchiato",
+            "hoeveel": "beker, 250 ml",
+            "kcal": 115
+          }
+        ]
+      },
+      {
+        "naam": "Tussendoor",
+        "items": [
+          {
+            "wat": "1 Snickers",
+            "hoeveel": "50 g",
+            "kcal": 242
+          },
+          {
+            "wat": "1 croissant",
+            "hoeveel": "60 g",
+            "kcal": 248
+          },
+          {
+            "wat": "1 mueslireep",
+            "hoeveel": "25 g",
+            "kcal": 114
+          },
+          {
+            "wat": "1 eiwitreep",
+            "hoeveel": "55 g",
+            "kcal": 278
+          }
+        ]
+      },
+      {
+        "naam": "Drankjes",
+        "items": [
+          {
+            "wat": "1 blikje cola",
+            "hoeveel": "330 ml",
+            "kcal": 135
+          },
+          {
+            "wat": "1 speciaalbiertje",
+            "hoeveel": "330 ml",
+            "kcal": 211
+          }
+        ]
+      }
+    ]
+  },
+  "optellen": {
+    "titel": "Het begon met één handje",
+    "vraag": "Een paar kleine dingen, één bonnetje.",
+    "knipoog": "Niemand bestelt zeven frikandellen op de borrel. Dit bonnetje wel.",
+    "label": "Een voorbeeld, geen gemiddelde.",
+    "bonnetjes": [
+      {
+        "moment": "borrel",
+        "titel": "Borrel met twee schaaltjes",
+        "situatie": "Vrijdagmiddag, anderhalf uur, een schaaltje borrelnoten én een schaaltje pinda's op tafel.",
+        "regels": [
+          {
+            "wat": "3× Handje borrelnoten",
+            "kcal": 399
+          },
+          {
+            "wat": "2× Handje pinda's",
+            "kcal": 310
+          },
+          {
+            "wat": "4× Blokje kaas",
+            "kcal": 152
+          },
+          {
+            "wat": "2× Biertje",
+            "kcal": 264
+          },
+          {
+            "wat": "2× Bitterbal",
+            "kcal": 124
+          }
+        ]
+      },
+      {
+        "moment": "koffie",
+        "titel": "Koffie bij schoonmoeder",
+        "situatie": "Zondagmiddag, een uurtje, twee kopjes koffie.",
+        "regels": [
+          {
+            "wat": "2× Cappuccino",
+            "kcal": 77.6
+          },
+          {
+            "wat": "1× Gevulde koek",
+            "kcal": 304
+          },
+          {
+            "wat": "2× Roomboterkoekje",
+            "kcal": 90
+          }
+        ]
+      },
+      {
+        "moment": "tv",
+        "titel": "Avondje op de bank",
+        "situatie": "Een film van twee uur, met z'n tweeën. Dit is wat jij pakte.",
+        "regels": [
+          {
+            "wat": "4× Handje chips",
+            "kcal": 216.4
+          },
+          {
+            "wat": "1× Handje M&M's",
+            "kcal": 87
+          },
+          {
+            "wat": "2× Biertje",
+            "kcal": 264
+          }
+        ]
+      }
+    ]
+  },
+  "permoment": {
+    "titel": "Per moment: tien voorbeelden",
+    "vraag": "Een greep uit wat er op tafel staat. De hoeveelheden zijn voorbeelden."
+  }
+}

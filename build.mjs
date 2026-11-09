@@ -10,9 +10,8 @@ const json = f => JSON.parse(read(f));
 
 const site = json("content/site.json");
 const nieuwsRaw = json("content/nieuws.json");
-const index = json("content/index.json");
+const ix = json("content/index-pagina.json");
 const cats = json("content/top10-per-moment.json");
-const ones = json("content/dit-is-ook-een-frikandel.json");
 const mom = json("content/momenten.json");
 const quiz = json("content/quiz.json");
 const nevo = json("content/nevo.json");
@@ -53,6 +52,10 @@ function dels(n, cap) {
   return h;
 }
 const trow = (i, what, sub, n) => `<div class="trow"><span class="rank">${String(i + 1).padStart(2, "0")}</span><span class="what">${esc(what)}${sub ? `<span>${esc(sub)}</span>` : ""}</span><span class="num">${fmt(n)}</span><div class="dels" aria-hidden="true">${dels(n, 6)}</div></div>`;
+// Regel zonder rangnummer (index: geen ranglijst)
+const vrow = (what, sub, n) => `<div class="trow norank"><span class="what">${esc(what)}${sub ? `<span>${esc(sub)}</span>` : ""}</span><span class="num">${fmt(n)}</span><div class="dels" aria-hidden="true">${dels(n, 6)}</div></div>`;
+const eenTegel = o => `<div class="one"><span class="onum">${esc(o.aantal)}</span><b>${esc(o.wat)}</b><span class="sub">${esc(o.hoeveel)}</span><span class="eq">= 1 <span class="del" aria-hidden="true"></span></span></div>`;
+const bonHTML = b => { const t = b.regels.reduce((s, r) => s + r.kcal, 0); return `<div class="bon ix-bon" role="group" aria-label="Voorbeeldbonnetje: ${esc(b.titel)}"><div class="bon-h"><b>SNACKBAR DE INDEX</b><span>${esc(b.titel)}</span></div>${b.regels.map(r => `<div class="bon-r"><span>${esc(r.wat)}</span><span>${fmt(r.kcal / F)}</span></div>`).join("")}<div class="bon-t"><span>TOTAAL</span><span>${fmt(t / F)} FRIKANDELLEN</span></div><div class="bon-f">${Math.round(t)} kcal · 1 frikandel = 180 kcal</div></div>`; };
 const beeld = (n, small) => n.beeld ? `<img src="/assets/img/nieuws/${small ? n.beeld.replace(/\.jpg$/, "-klein.jpg") : n.beeld}" alt="${small ? "" : esc(n.beeld_alt || "")}" width="${small ? 480 : 1600}" height="${small ? 270 : 900}"${small ? ' loading="lazy"' : ""} class="${small ? "thumb" : "art-img"}">` : "";
 const stempel = (n, small) => n.frik != null ? `<span class="stempel${small ? " stempel-s" : ""}" aria-hidden="true"><b>${fmt(n.frik)}</b>${small ? "" : " frikandel"}</span>` : "";
 const foto = (n, small) => `<span class="beeld-w">${beeld(n, small)}${stempel(n, small)}</span>`;
@@ -77,14 +80,21 @@ const POSTS = [
 ];
 
 const BLOCKS = {
-  TOP5: () => index.slice(0, 5).map((t, i) => trow(i, t.wat, "", t.frikandellen)).join(""),
-  TOP10: () => index.map((t, i) => trow(i, t.wat, "", t.frikandellen)).join(""),
+  IX_INTRO: () => esc(ix.intro),
+  EEN_T: () => esc(ix.een.titel), EEN_V: () => esc(ix.een.vraag), EEN_K: () => esc(ix.een.knipoog), EEN_N: () => esc(ix.een.noot),
+  EEN: () => ix.een.items.map(eenTegel).join(""),
+  EEN4: () => [0, 1, 7, 8].map(i => eenTegel(ix.een.items[i])).join(""),
+  STUK_T: () => esc(ix.stuk.titel), STUK_V: () => esc(ix.stuk.vraag), STUK_K: () => esc(ix.stuk.knipoog),
+  STUK: () => ix.stuk.groepen.map(g => `<h3 class="grp-h">${esc(g.naam)}</h3><div class="top">${g.items.map(r => vrow(r.wat, r.hoeveel, r.kcal / F)).join("")}</div>`).join("\n"),
+  OPT_T: () => esc(ix.optellen.titel), OPT_V: () => esc(ix.optellen.vraag), OPT_K: () => esc(ix.optellen.knipoog),
+  BONNEN: () => `<div class="cats" role="group" aria-label="Kies een voorbeeld" id="bontabs" hidden>${ix.optellen.bonnetjes.map((b, i) => `<button type="button" class="chip" data-bon="${i}" aria-pressed="${i === 0}">${esc(b.titel)}</button>`).join("")}</div>\n` +
+    ix.optellen.bonnetjes.map((b, i) => `<div class="bonvb${i === 0 ? " on" : ""}" data-bon="${i}"><h3 class="h3">${esc(b.titel)}</h3><p class="small">${esc(b.situatie)} <i>${esc(ix.optellen.label)}</i></p>${bonHTML(b)}<a class="cta" href="/reken/?moment=${b.moment}">Maak jouw eigen bonnetje →</a></div>`).join("\n"),
+  PM_T: () => esc(ix.permoment.titel), PM_V: () => esc(ix.permoment.vraag),
   NEWS3: () => nieuws.slice(0, 3).map(newsItem).join(""),
   NEWSALL: () => nieuws.map((n, i) => i === 0 ? newsGroot(n) : newsItem(n)).join(""),
   POSTS: () => POSTS.map(([h, t, s, n]) => `<a class="post" href="${h}">${n ? `<span class="post-n"><b>${n}</b>frikandel</span>` : ""}<b>${esc(t)}</b><span>${esc(s)}</span></a>`).join(""),
-  ONES: () => ones.map(o => `<div class="one"><span class="onum">${esc(o.aantal)}</span><b>${esc(o.wat)}</b><span class="eq">= 1 <span class="del" aria-hidden="true"></span></span></div>`).join(""),
   CATS: () => `<div class="cats" role="group" aria-label="Kies een moment" id="cattabs" hidden>${cats.map((c, i) => `<button type="button" class="chip" data-cat="${i}" aria-pressed="${i === 0}">${esc(c.moment)}</button>`).join("")}</div>\n` +
-    cats.map((c, i) => `<h3 class="cat-h">${esc(c.moment)}</h3><div class="top catlist${i === 0 ? " on" : ""}" data-cat="${i}">${c.lijst.slice().sort((p, q) => q.frikandellen - p.frikandellen).map((r, j) => trow(j, r.wat, r.hoeveel, r.frikandellen)).join("")}</div>`).join("\n"),
+    cats.map((c, i) => `<h3 class="cat-h">${esc(c.moment)}</h3><div class="top catlist${i === 0 ? " on" : ""}" data-cat="${i}">${c.lijst.map(r => vrow(r.wat, r.hoeveel, r.frikandellen)).join("")}</div>`).join("\n"),
   DAYS: () => String(daysToFrikandeldag()),
   BUILDDATE: () => BUILDDATE,
   SOCIALS: () => SOC ? `<a class="fact clink" href="${esc(site.instagram)}" target="_blank" rel="noopener"><span class="fnum">IG</span><div><b>Instagram</b><br><span class="small">@frikandellenindex</span></div></a>
@@ -96,7 +106,7 @@ const MENU = [
   ["/", "Home", "Het begin"],
   ["/reken/", "Reken het uit", "Hoeveel frikandellen was dat?"],
   ["/quiz/", "Meer of minder?", "De frikandellenquiz"],
-  ["/top-10/", "De Frikandellenindex", "De top 10 en alle momenten"],
+  ["/de-index/", "De Frikandellenindex", "Zoveel is één frikandel"],
   ["/nieuws/", "Nieuws en blogs", "Frikandellennieuws en verhalen"],
   ["/zoek/", "Zoek je snack", "Alle producten, in frikandellen"],
   ["/over/", "Over", "Wat het is en hoe het begon"],
@@ -106,7 +116,7 @@ const MENU = [
 const TABS = [
   ["/", "home", "Home", '<path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/>'],
   ["/reken/", "reken", "Reken", '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 13h2M13 13h2M9 17h2M13 17h2"/>'],
-  ["/top-10/", "top-10", "Index", '<path d="M4 20V13h4v7M10 20V8h4v12M16 20v-5h4v5"/>'],
+  ["/de-index/", "top-10", "Index", '<path d="M4 20V13h4v7M10 20V8h4v12M16 20v-5h4v5"/>'],
   ["/nieuws/", "nieuws", "Nieuws", '<path d="M4 5h13v14H6a2 2 0 0 1-2-2zM17 9h3v8a2 2 0 0 1-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/>'],
   ["/zoek/", "zoek", "Zoek", '<circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/>'],
 ];
@@ -279,6 +289,14 @@ fs.writeFileSync(path.join(DIST, "assets/nevo.js"), "window.FI_NEVO=" + JSON.str
 
 const metas = fs.readdirSync(path.join(ROOT, "pages")).filter(f => f.endsWith(".html")).map(page).concat(nieuws.map(artikel)).concat(wist.map(wistPage));
 
+// Oud adres /top-10/ stuurt door naar /de-index/ (GitHub Pages kent geen server-redirects)
+fs.mkdirSync(path.join(DIST, "top-10"), { recursive: true });
+fs.writeFileSync(path.join(DIST, "top-10/index.html"), `<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><title>De Frikandellenindex</title>
+<link rel="canonical" href="${URL_}/de-index/"><meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=/de-index/">
+</head><body><p>De Frikandellenindex is verhuisd: <a href="/de-index/">naar de nieuwe pagina</a>.</p></body></html>
+`);
 const pub = metas.filter(m => !m.noindex);
 fs.writeFileSync(path.join(DIST, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -301,8 +319,11 @@ fs.writeFileSync(path.join(DIST, "llms.txt"), `# ${site.naam}
 - Nationale Frikandeldag is elk jaar op 4 februari.
 - Contact: ${site.email}${SOC ? " · Instagram en TikTok: @frikandellenindex" : ""}
 
-## De index (top 10 van ongemerkt snacken, in frikandellen)
-${index.map(t => `- ${t.wat}: ${fmt(t.frikandellen)}`).join("\n")}
+## De index: dit is óók één frikandel (ongeveer 180 kcal)
+${ix.een.items.map(o => `- ${o.aantal} ${o.wat} (${o.hoeveel})`).join("\n")}
+
+## Eén stuk, in frikandellen
+${ix.stuk.groepen.flatMap(g => g.items).map(r => `- ${r.wat} (${r.hoeveel}): ${fmt(r.kcal / F)}`).join("\n")}
 
 ## Pagina's
 ${pub.map(m => `- [${m.title.replace(/ \| De Frikandellenindex$/, "")}](${URL_}${m.path}): ${m.description}`).join("\n")}

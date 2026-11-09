@@ -46,6 +46,15 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
     document.querySelectorAll(".catlist").forEach(l=>l.classList.toggle("on", l.dataset.cat===b.dataset.cat)); });
 })();
 
+/* Index: voorbeeldbonnetjes wisselen (alle bonnetjes staan al in de HTML) */
+(function(){
+  const tabs=$("bontabs"); if(!tabs) return;
+  tabs.hidden=false;
+  tabs.addEventListener("click",e=>{ const b=e.target.closest("button"); if(!b) return;
+    tabs.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+    document.querySelectorAll(".bonvb").forEach(l=>l.classList.toggle("on", l.dataset.bon===b.dataset.bon)); });
+})();
+
 /* Calculator */
 (function(){
   if(!$("mtabs") || !FI.moments) return;
