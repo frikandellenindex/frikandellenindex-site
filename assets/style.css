@@ -435,6 +435,10 @@ table.letters td:first-child,table.letters th:first-child{text-align:left}
 #mtabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 -16px;padding:2px 16px 6px;scroll-padding:0 16px}
 #mtabs::-webkit-scrollbar{display:none}
 #mtabs button{flex:0 0 auto;white-space:nowrap}
+#mtabs.more-r{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 48px),transparent)}
+#mtabs.more-l{-webkit-mask-image:linear-gradient(90deg,transparent,#000 48px);mask-image:linear-gradient(90deg,transparent,#000 48px)}
+#mtabs.more-l.more-r{-webkit-mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(90deg,transparent,#000 48px,#000 calc(100% - 48px),transparent)}
+@media (min-width:600px){#mtabs{flex-wrap:wrap;overflow:visible;margin:0;padding:0;-webkit-mask-image:none!important;mask-image:none!important}}
 .list .grp{font:500 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mayo);margin:18px 0 0;padding-bottom:4px;border-bottom:1px dashed var(--board-line)}
 .list .grp:first-child{margin-top:8px}
 .list .row:has(+ .grp){border-bottom:0}

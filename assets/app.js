@@ -92,7 +92,7 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
     const k=total(), n=k/F;
     $("rmoment").textContent=MO[moment].jouw || "Jouw "+MO[moment].naam.replace(/^(De|Het) /,"").replace(/^Koffie bij je/,"koffie bij je").toLowerCase();
     renderTabs();
-    try{ const t=$("m-"+moment), w=$("mtabs"); if(t && w.scrollWidth>w.clientWidth) w.scrollLeft=t.offsetLeft-w.offsetLeft-16; }catch(e){}
+    try{ const t=$("m-"+moment), w=$("mtabs"); if(t && w.scrollWidth>w.clientWidth+1) w.scrollLeft=t.offsetLeft-w.offsetLeft-16; tabFade(); }catch(e){}
     $("n").textContent=fmt(n); $("nu").textContent=unit(n); $("dels").innerHTML=dels(n,24);
     $("joke").textContent=joke(n);
     $("crown").hidden=n<4;
@@ -103,6 +103,9 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
     if($("sharetxt")) $("sharetxt").textContent=MO[moment].deelregel||"";
     $("bonimg").hidden=true; $("copied").hidden=true;
   }
+  /* Schuifregel met momenten: vervagen aan de kant waar nog meer staat */
+  function tabFade(){ const w=$("mtabs"), more=w.scrollWidth>w.clientWidth+1; w.classList.toggle("more-r", more && w.scrollLeft+w.clientWidth<w.scrollWidth-2); w.classList.toggle("more-l", more && w.scrollLeft>2); }
+  $("mtabs").addEventListener("scroll",tabFade,{passive:true}); window.addEventListener("resize",tabFade);
   $("mtabs").addEventListener("click",e=>{const b=e.target.closest("button"); if(b && b.dataset.m!==moment) load(b.dataset.m);});
   $("list").addEventListener("click",e=>{const b=e.target.closest("button"); if(!b) return; const i=+b.dataset.i; counts[i]=Math.max(0,(counts[i]||0)+ +b.dataset.d); $("c-"+i).textContent=counts[i]; if(!touched){ touched=true; track("calculator-gebruikt"); } render();});
   $("reset").addEventListener("click",()=>{counts={}; extras=[]; renderM();});
