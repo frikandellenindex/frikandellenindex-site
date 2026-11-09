@@ -83,18 +83,19 @@ const BLOCKS = {
   IX_INTRO: () => esc(ix.intro),
   EEN_T: () => esc(ix.een.titel), EEN_V: () => esc(ix.een.vraag), EEN_K: () => esc(ix.een.knipoog), EEN_N: () => esc(ix.een.noot),
   EEN: () => ix.een.items.map(eenTegel).join(""),
-  EEN4: () => [0, 1, 7, 8].map(i => eenTegel(ix.een.items[i])).join(""),
   STUK_T: () => esc(ix.stuk.titel), STUK_V: () => esc(ix.stuk.vraag), STUK_K: () => esc(ix.stuk.knipoog),
   STUK: () => ix.stuk.groepen.map(g => `<h3 class="grp-h">${esc(g.naam)}</h3><div class="top">${g.items.map(r => vrow(r.wat, r.hoeveel, r.kcal / F)).join("")}</div>`).join("\n"),
   OPT_T: () => esc(ix.optellen.titel), OPT_V: () => esc(ix.optellen.vraag), OPT_K: () => esc(ix.optellen.knipoog),
   BONNEN: () => `<div class="cats" role="group" aria-label="Kies een voorbeeld" id="bontabs" hidden>${ix.optellen.bonnetjes.map((b, i) => `<button type="button" class="chip" data-bon="${i}" aria-pressed="${i === 0}">${esc(b.titel)}</button>`).join("")}</div>\n` +
-    ix.optellen.bonnetjes.map((b, i) => `<div class="bonvb${i === 0 ? " on" : ""}" data-bon="${i}"><h3 class="h3">${esc(b.titel)}</h3><p class="small">${esc(b.situatie)} <i>${esc(ix.optellen.label)}</i></p>${bonHTML(b)}<a class="cta" href="/reken/?moment=${b.moment}">Maak jouw eigen bonnetje →</a></div>`).join("\n"),
-  PM_T: () => esc(ix.permoment.titel), PM_V: () => esc(ix.permoment.vraag),
+    ix.optellen.bonnetjes.map((b, i) => `<div class="bonvb${i === 0 ? " on" : ""}" data-bon="${i}"><h3 class="h3">${esc(b.titel)}</h3><p class="small">${esc(b.situatie)} <i>${esc(b.zo)}</i></p>${bonHTML(b)}<a class="cta" href="/reken/?moment=${b.moment}">Maak jouw eigen bonnetje →</a></div>`).join("\n"),
+  PM_E: () => esc(ix.permoment.eyebrow), PM_T: () => esc(ix.permoment.titel), PM_V: () => esc(ix.permoment.vraag),
+  CATS5: () => `<div class="cats" role="group" aria-label="Kies een moment" id="cattabs" hidden>${cats.map((c, i) => `<button type="button" class="chip" data-cat="${i}" aria-pressed="${i === 0}">${esc(c.moment)}</button>`).join("")}</div>\n` +
+    cats.map((c, i) => { const m = mom.momenten.find(x => x.knop === c.moment); return `<div class="catlist${i === 0 ? " on" : ""}" data-cat="${i}"><h3 class="cat-h">${esc(c.moment)}</h3><div class="top">${c.lijst.slice().sort((p, q) => q.frikandellen - p.frikandellen).slice(0, 5).map((r, j) => trow(j, r.wat, r.hoeveel, r.frikandellen)).join("")}</div>${m ? `<a class="cta cta-s" href="/reken/?moment=${m.id}">${esc(ctaTekst(m))} →</a>` : ""}</div>`; }).join("\n"),
   NEWS3: () => nieuws.slice(0, 3).map(newsItem).join(""),
   NEWSALL: () => nieuws.map((n, i) => i === 0 ? newsGroot(n) : newsItem(n)).join(""),
   POSTS: () => POSTS.map(([h, t, s, n]) => `<a class="post" href="${h}">${n ? `<span class="post-n"><b>${n}</b>frikandel</span>` : ""}<b>${esc(t)}</b><span>${esc(s)}</span></a>`).join(""),
   CATS: () => `<div class="cats" role="group" aria-label="Kies een moment" id="cattabs" hidden>${cats.map((c, i) => `<button type="button" class="chip" data-cat="${i}" aria-pressed="${i === 0}">${esc(c.moment)}</button>`).join("")}</div>\n` +
-    cats.map((c, i) => `<h3 class="cat-h">${esc(c.moment)}</h3><div class="top catlist${i === 0 ? " on" : ""}" data-cat="${i}">${c.lijst.map(r => vrow(r.wat, r.hoeveel, r.frikandellen)).join("")}</div>`).join("\n"),
+    cats.map((c, i) => `<h3 class="cat-h">${esc(c.moment)}</h3><div class="top catlist${i === 0 ? " on" : ""}" data-cat="${i}">${c.lijst.slice().sort((p, q) => q.frikandellen - p.frikandellen).map((r, j) => trow(j, r.wat, r.hoeveel, r.frikandellen)).join("")}</div>`).join("\n"),
   DAYS: () => String(daysToFrikandeldag()),
   BUILDDATE: () => BUILDDATE,
   SOCIALS: () => SOC ? `<a class="fact clink" href="${esc(site.instagram)}" target="_blank" rel="noopener"><span class="fnum">IG</span><div><b>Instagram</b><br><span class="small">@frikandellenindex</span></div></a>

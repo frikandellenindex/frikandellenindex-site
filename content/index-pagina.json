@@ -154,7 +154,6 @@
     "titel": "Het begon met één handje",
     "vraag": "Een paar kleine dingen, één bonnetje.",
     "knipoog": "Niemand bestelt zeven frikandellen op de borrel. Dit bonnetje wel.",
-    "label": "Een voorbeeld, geen gemiddelde.",
     "bonnetjes": [
       {
         "moment": "borrel",
@@ -181,7 +180,8 @@
             "wat": "2× Bitterbal",
             "kcal": 124
           }
-        ]
+        ],
+        "zo": "Zo kan een borrel lopen."
       },
       {
         "moment": "koffie",
@@ -200,7 +200,8 @@
             "wat": "2× Roomboterkoekje",
             "kcal": 90
           }
-        ]
+        ],
+        "zo": "Zo kan een middag lopen."
       },
       {
         "moment": "tv",
@@ -219,12 +220,14 @@
             "wat": "2× Biertje",
             "kcal": 264
           }
-        ]
+        ],
+        "zo": "Zo kan een avond lopen."
       }
     ]
   },
   "permoment": {
-    "titel": "Per moment: tien voorbeelden",
-    "vraag": "Een greep uit wat er op tafel staat. De hoeveelheden zijn voorbeelden."
+    "eyebrow": "Samengesteld door de redactie",
+    "titel": "Top 10 per moment",
+    "vraag": "Onze keuze uit wat er op tafel staat, met hoeveelheden die wij kozen. De lijst kan veranderen."
   }
 }
