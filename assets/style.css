@@ -115,7 +115,7 @@ main{padding-block:24px calc(110px + env(safe-area-inset-bottom,0px))}
 .row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;padding:10px 0;border-bottom:1px dashed var(--board-line)}
 .row .name span{display:block;font-family:var(--mono);font-size:.74rem;color:var(--board-muted)}
 .step{display:flex;align-items:center;gap:6px}
-.step button{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--board-muted);background:transparent;color:var(--board-ink);font:700 1.2rem var(--body);cursor:pointer;line-height:1}
+.step button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--board-muted);background:transparent;color:var(--board-ink);font:700 1.2rem var(--body);cursor:pointer;line-height:1}
 .step output{min-width:2ch;text-align:center;font-family:var(--mono);font-variant-numeric:tabular-nums}
 .result{display:flex;flex-direction:column;gap:12px}
 .score{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
@@ -430,3 +430,11 @@ table.letters td:first-child,table.letters th:first-child{text-align:left}
 .lightbox img{display:block;width:auto;height:auto;max-width:min(92vw,620px);max-height:88vh;border-radius:3px}
 .lb-sluit{position:absolute;top:-14px;right:-14px;width:44px;height:44px;border-radius:50%;border:0;background:#FFF5DA;color:#2A1A12;font:700 1.7rem/1 var(--body);cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.4)}
 @media (max-width:520px){.lb-sluit{top:6px;right:6px}}
+
+/* Calculator 0.2: momentknoppen op één schuifregel, groepskopjes */
+#mtabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin:0 -16px;padding:2px 16px 6px;scroll-padding:0 16px}
+#mtabs::-webkit-scrollbar{display:none}
+#mtabs button{flex:0 0 auto;white-space:nowrap}
+.list .grp{font:500 .72rem var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mayo);margin:18px 0 0;padding-bottom:4px;border-bottom:1px dashed var(--board-line)}
+.list .grp:first-child{margin-top:8px}
+.list .row:has(+ .grp){border-bottom:0}

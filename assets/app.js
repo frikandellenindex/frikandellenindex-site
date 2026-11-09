@@ -50,7 +50,7 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
 (function(){
   if(!$("mtabs") || !FI.moments) return;
   const MOMENTS=FI.moments, MO=Object.fromEntries(MOMENTS.map(m=>[m.id,m]));
-  const ITEMS=Object.fromEntries(MOMENTS.map(m=>[m.id,m.producten.map(p=>[p.naam,p.kcal,p.portie])]));
+  const ITEMS=Object.fromEntries(MOMENTS.map(m=>[m.id,m.producten.map(p=>[p.naam,p.kcal,p.portie,p.groep||""])]));
   const EXTRA=(FI.extra||[]).map(p=>[p.naam,p.kcal,p.portie]);
   let moment=(function(){ try{ const q=new URLSearchParams(location.search).get("moment"); if(q && MO[q]) return q; }catch(e){} return MOMENTS[0].id; })(), counts={}, extras=[], variant=Math.floor(Math.random()*2), touched=false;
   const STATE={};
@@ -72,7 +72,8 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
   }
   function renderM(){
     $("tagline").textContent=MO[moment].tagline;
-    $("list").innerHTML=rows().map(([name,k,g],i)=>`<div class="row"><div class="name">${esc(name)}<span>${esc(g)} · ${fmt(k/F)} frikandel</span></div><div class="step"><button type="button" id="min-${moment}-${i}" data-i="${i}" data-d="-1" aria-label="${esc(name)} min één">−</button><output id="c-${i}">${counts[i]||0}</output><button type="button" id="plus-${moment}-${i}" data-i="${i}" data-d="1" aria-label="${esc(name)} plus één">+</button></div></div>`).join("");
+    let lastG=null;
+    $("list").innerHTML=rows().map(([name,k,g,grp],i)=>{ const G=i>=ITEMS[moment].length?"Zelf toegevoegd":(grp||""); const head=G&&G!==lastG?`<h3 class="grp">${esc(G)}</h3>`:""; lastG=G; return head+`<div class="row"><div class="name">${esc(name)}<span>${esc(g)} · ${fmt(k/F)} frikandel</span></div><div class="step"><button type="button" id="min-${moment}-${i}" data-i="${i}" data-d="-1" aria-label="${esc(name)} min één">−</button><output id="c-${i}">${counts[i]||0}</output><button type="button" id="plus-${moment}-${i}" data-i="${i}" data-d="1" aria-label="${esc(name)} plus één">+</button></div></div>`; }).join("");
     render();
   }
   function joke(n){
@@ -89,8 +90,9 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
   }
   function render(){
     const k=total(), n=k/F;
-    $("rmoment").textContent="Jouw "+MO[moment].naam.replace(/^(De|Het) /,"").replace(/^Koffie bij je/,"koffie bij je").toLowerCase();
+    $("rmoment").textContent=MO[moment].jouw || "Jouw "+MO[moment].naam.replace(/^(De|Het) /,"").replace(/^Koffie bij je/,"koffie bij je").toLowerCase();
     renderTabs();
+    try{ const t=$("m-"+moment), w=$("mtabs"); if(t && w.scrollWidth>w.clientWidth) w.scrollLeft=t.offsetLeft-w.offsetLeft-16; }catch(e){}
     $("n").textContent=fmt(n); $("nu").textContent=unit(n); $("dels").innerHTML=dels(n,24);
     $("joke").textContent=joke(n);
     $("crown").hidden=n<4;
@@ -116,7 +118,7 @@ if(menubtn) menubtn.addEventListener("click",()=>{ const m=$("menu"); m.hidden=!
     clearTimeout(missTimer);
     if(!q){
       const sug=(MO[moment].suggesties||[]).map(n=>pool.find(r=>r[0]===n)).filter(Boolean);
-      $("addres").innerHTML=sug.length?`<p class="addhint">Vaak erbij gepakt:</p>`+sug.map(btn).join(""):"";
+      $("addres").innerHTML=sug.length?`<p class="addhint">Misschien ook:</p>`+sug.map(btn).join(""):"";
       return;
     }
     const hits=pool.filter(r=>norm(r[0]).includes(q));

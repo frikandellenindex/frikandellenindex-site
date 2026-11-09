@@ -30,6 +30,8 @@ const ISODATE = now.toISOString().slice(0, 10);
 const V = now.getTime().toString(36);
 
 const MOMBY = Object.fromEntries(mom.momenten.map(m => [m.id, m]));
+// Knoptekst naar de calculator: eigen tekst (veld "cta") of "Reken je <knop met kleine letter> uit"
+const ctaTekst = m => m.cta || `Reken je ${m.knop.charAt(0).toLowerCase() + m.knop.slice(1)} uit`;
 const LAUNCH = site.lanceerdatum ? new Date(site.lanceerdatum + "T12:00:00") : new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12);
 // Datum per artikel: "datum" (bijv. "2026-11-21") als die er staat, anders lanceerdatum min "terug" dagen.
 const nieuws = nieuwsRaw.map(n => {
@@ -38,7 +40,7 @@ const nieuws = nieuwsRaw.map(n => {
   const kcal = n.bon.reduce((t, b) => t + b.kcal, 0);
   return { ...n, url: `/nieuws/${n.slug}/`, iso: d.toISOString().slice(0, 10), datum: `${d.getDate()} ${MAANDEN[d.getMonth()]} ${d.getFullYear()}`,
     rub: m ? m.knop : "Onderzoek", rubLink: m ? `/reken/?moment=${m.id}` : "/reken/",
-    cta: m ? `Reken je ${m.knop.replace(/^(Vrijdagborrel|Verjaardag|Vieruursdip)$/, s => s.toLowerCase()).replace(/^Avondje/, "avondje").replace(/^Koffie/, "koffie").replace(/^Gezond tussendoortje$/, "gezonde tussendoortje")} uit →` : "Reken het zelf uit →",
+    cta: m ? `${ctaTekst(m)} →` : "Reken het zelf uit →",
     frik: kcal ? kcal / (site.frikandel_kcal || 180) : null, _t: d.getTime() };
 }).filter(n => n._t <= Date.now() + 864e5).sort((a, b) => b._t - a._t);
 
@@ -260,7 +262,7 @@ function wistPage(w) {
     <div class="tablewrap"><table class="letters"><thead><tr><th>${esc(w.kop)}</th><th>Frikandel</th></tr></thead><tbody>${w.rijen.map(([l, k]) => `<tr${l === "Samen" ? ' class="ref"' : ""}><td>${esc(l)}</td><td><b>${fmt(k / F)}</b><span>${k} kcal</span></td></tr>`).join("")}</tbody></table></div>
     ${w.tekst.map(t => `<p>${esc(t)}</p>`).join("")}
     ${w.extra.map(([q, a]) => `<h2 class="h3">${esc(q)}</h2><p>${esc(a)}</p>`).join("")}
-    <a class="cta" href="/reken/?moment=${m.id}">Reken je ${esc(m.knop.replace(/^(Vrijdagborrel|Verjaardag|Vieruursdip)$/, s => s.toLowerCase()).replace(/^Avondje/, "avondje").replace(/^Koffie/, "koffie"))} uit →</a>
+    <a class="cta" href="/reken/?moment=${m.id}">${esc(ctaTekst(m))} →</a>
     ${w.links.map(([h, t]) => `<a class="link" href="${h}">${esc(t)} →</a>`).join("")}
     <a class="link" href="/calorieen-snacks/">Meer weetjes: alle snacks in frikandellen →</a>
     <p class="small">Energie volgens NEVO-online 2025/9.0 (RIVM). Porties volgens RIVM Portie-online of het winkelgewicht. De index meet hoeveel, niet hoe gezond. <a class="link" href="/zo-rekenen-we/">Zo rekenen we →</a><br>Bijgewerkt: oktober 2026</p>

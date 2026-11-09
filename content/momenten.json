@@ -2,10 +2,10 @@
   "momenten": [
     {
       "id": "borrel",
-      "knop": "Vrijdagborrel",
-      "naam": "De vrijdagmiddagborrel",
+      "knop": "Borrel",
+      "naam": "De borrel",
       "tagline": "Het begon met één drankje. Zoals altijd.",
-      "deeltekst": "Op de vrijdagborrel",
+      "deeltekst": "Op de borrel",
       "grappen": {
         "weinig": [
           "Netjes. Je hebt vooral staan praten."
@@ -21,50 +21,100 @@
         {
           "naam": "Handje borrelnoten",
           "kcal": 133,
-          "portie": "25 g"
+          "portie": "25 g",
+          "groep": "Nootjes en chips"
         },
         {
           "naam": "Handje pinda's",
           "kcal": 155,
-          "portie": "25 g"
+          "portie": "25 g",
+          "groep": "Nootjes en chips"
+        },
+        {
+          "naam": "Handje chips",
+          "kcal": 54.1,
+          "portie": "10 g",
+          "groep": "Nootjes en chips"
         },
         {
           "naam": "Blokje kaas",
           "kcal": 38,
-          "portie": "10 g"
-        },
-        {
-          "naam": "Plakje salami",
-          "kcal": 20,
-          "portie": "5 g"
+          "portie": "10 g",
+          "groep": "Kaas, worst en hapjes"
         },
         {
           "naam": "Blokje brie",
           "kcal": 37,
-          "portie": "10 g"
+          "portie": "10 g",
+          "groep": "Kaas, worst en hapjes"
+        },
+        {
+          "naam": "Blokje leverworst",
+          "kcal": 29,
+          "portie": "10 g",
+          "groep": "Kaas, worst en hapjes"
+        },
+        {
+          "naam": "Plakje droge worst of salami",
+          "kcal": 20,
+          "portie": "5 g",
+          "groep": "Kaas, worst en hapjes"
+        },
+        {
+          "naam": "Schaaltje olijven",
+          "kcal": 24.4,
+          "portie": "± 5 stuks, 20 g",
+          "groep": "Kaas, worst en hapjes"
+        },
+        {
+          "naam": "Toastje met salade",
+          "kcal": 50.2,
+          "portie": "3 g toast + 15 g salade",
+          "groep": "Kaas, worst en hapjes"
+        },
+        {
+          "naam": "Plakje stokbrood met kruidenboter",
+          "kcal": 60.6,
+          "portie": "plakje 2 cm, 20 g",
+          "groep": "Kaas, worst en hapjes"
+        },
+        {
+          "naam": "Bitterbal",
+          "kcal": 62,
+          "portie": "1 stuk, 17 g",
+          "groep": "Uit de frituur"
         },
         {
           "naam": "Biertje",
           "kcal": 132,
-          "portie": "flesje 300 ml"
-        },
-        {
-          "naam": "Glas wijn",
-          "kcal": 114,
-          "portie": "150 ml"
+          "portie": "flesje 300 ml",
+          "groep": "Drinken"
         },
         {
           "naam": "Speciaalbiertje",
           "kcal": 211,
-          "portie": "330 ml"
+          "portie": "330 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas wijn",
+          "kcal": 114,
+          "portie": "150 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas frisdrank",
+          "kcal": 82,
+          "portie": "200 ml",
+          "groep": "Drinken"
         }
       ],
       "deelregel": "Laat zien hoe gezellig het was.",
       "suggesties": [
-        "Bitterbal",
         "Mini-loempia",
-        "Handje chips",
-        "Blokje leverworst"
+        "Mini-frikandel",
+        "Handje Japanse mix",
+        "Handje cashewnoten"
       ]
     },
     {
@@ -86,59 +136,109 @@
       },
       "producten": [
         {
+          "naam": "Punt appeltaart",
+          "kcal": 259,
+          "portie": "115 g",
+          "groep": "Taart en koek"
+        },
+        {
+          "naam": "Punt slagroomtaart",
+          "kcal": 316,
+          "portie": "100 g",
+          "groep": "Taart en koek"
+        },
+        {
+          "naam": "Toef slagroom (erbij)",
+          "kcal": 70,
+          "portie": "20 g",
+          "groep": "Taart en koek"
+        },
+        {
+          "naam": "Plak cake",
+          "kcal": 119.4,
+          "portie": "30 g",
+          "groep": "Taart en koek"
+        },
+        {
           "naam": "Blokje kaas",
           "kcal": 38,
-          "portie": "10 g"
+          "portie": "10 g",
+          "groep": "Hapjes"
         },
         {
           "naam": "Blokje leverworst",
           "kcal": 29,
-          "portie": "10 g"
+          "portie": "10 g",
+          "groep": "Hapjes"
+        },
+        {
+          "naam": "Plakje droge worst of salami",
+          "kcal": 20,
+          "portie": "5 g",
+          "groep": "Hapjes"
+        },
+        {
+          "naam": "Toastje met salade",
+          "kcal": 50.2,
+          "portie": "3 g toast + 15 g salade",
+          "groep": "Hapjes"
         },
         {
           "naam": "Handje chips",
-          "kcal": 54,
-          "portie": "10 g"
+          "kcal": 54.1,
+          "portie": "10 g",
+          "groep": "Hapjes"
         },
         {
           "naam": "Handje borrelnoten",
           "kcal": 133,
-          "portie": "25 g"
+          "portie": "25 g",
+          "groep": "Hapjes"
         },
         {
-          "naam": "Punt appeltaart",
-          "kcal": 259,
-          "portie": "115 g"
-        },
-        {
-          "naam": "Toef slagroom",
-          "kcal": 70,
-          "portie": "20 g"
+          "naam": "Handje Japanse mix",
+          "kcal": 105,
+          "portie": "25 g",
+          "groep": "Hapjes"
         },
         {
           "naam": "Biertje",
           "kcal": 132,
-          "portie": "flesje 300 ml"
+          "portie": "flesje 300 ml",
+          "groep": "Drinken"
         },
         {
           "naam": "Glas wijn",
           "kcal": 114,
-          "portie": "150 ml"
+          "portie": "150 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas frisdrank",
+          "kcal": 82,
+          "portie": "200 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas vruchtensap",
+          "kcal": 90,
+          "portie": "200 ml",
+          "groep": "Drinken"
         }
       ],
       "deelregel": "Stuur het naar de jarige.",
       "suggesties": [
         "Bitterbal",
-        "Punt slagroomtaart",
-        "Handje Japanse mix",
-        "Plakje salami"
+        "Tompouce",
+        "Blokje brie",
+        "Slagroomsoesje"
       ]
     },
     {
       "id": "koffie",
       "knop": "Koffie bij schoonmoeder",
       "naam": "Koffie bij je schoonmoeder",
-      "tagline": "Je kwam voor een kop koffie.",
+      "tagline": "Je kwam voor een kop koffie. Bij je schoonmoeder, de buren of op kantoor.",
       "deeltekst": "Op de koffie bij mijn schoonmoeder",
       "grappen": {
         "weinig": [
@@ -153,52 +253,102 @@
       },
       "producten": [
         {
-          "naam": "Gevulde koek",
-          "kcal": 304,
-          "portie": "74 g"
-        },
-        {
           "naam": "Stroopwafel",
           "kcal": 180,
-          "portie": "38 g"
+          "portie": "38 g",
+          "groep": "Koekjes"
+        },
+        {
+          "naam": "Gevulde koek",
+          "kcal": 304,
+          "portie": "74 g",
+          "groep": "Koekjes"
         },
         {
           "naam": "Roomboterkoekje",
           "kcal": 45,
-          "portie": "10 g"
+          "portie": "10 g",
+          "groep": "Koekjes"
         },
         {
-          "naam": "Punt appeltaart",
-          "kcal": 259,
-          "portie": "115 g"
+          "naam": "Speculaasje",
+          "kcal": 84,
+          "portie": "18 g",
+          "groep": "Koekjes"
         },
         {
-          "naam": "Toef slagroom",
-          "kcal": 70,
-          "portie": "20 g"
-        },
-        {
-          "naam": "Tompouce",
-          "kcal": 268,
-          "portie": "85 g"
+          "naam": "Kokoskoek",
+          "kcal": 310,
+          "portie": "60 g",
+          "groep": "Koekjes"
         },
         {
           "naam": "Chocolate chip cookie",
           "kcal": 105,
-          "portie": "21 g"
+          "portie": "21 g",
+          "groep": "Koekjes"
+        },
+        {
+          "naam": "Bonbon",
+          "kcal": 76.8,
+          "portie": "15 g",
+          "groep": "Koekjes"
+        },
+        {
+          "naam": "Punt appeltaart",
+          "kcal": 259,
+          "portie": "115 g",
+          "groep": "Gebak"
+        },
+        {
+          "naam": "Punt slagroomtaart",
+          "kcal": 316,
+          "portie": "100 g",
+          "groep": "Gebak"
+        },
+        {
+          "naam": "Toef slagroom (erbij)",
+          "kcal": 70,
+          "portie": "20 g",
+          "groep": "Gebak"
+        },
+        {
+          "naam": "Plak cake",
+          "kcal": 119.4,
+          "portie": "30 g",
+          "groep": "Gebak"
+        },
+        {
+          "naam": "Tompouce",
+          "kcal": 268,
+          "portie": "85 g",
+          "groep": "Gebak"
+        },
+        {
+          "naam": "Slagroomsoesje",
+          "kcal": 127,
+          "portie": "45 g",
+          "groep": "Gebak"
+        },
+        {
+          "naam": "Cappuccino",
+          "kcal": 38.8,
+          "portie": "kopje 125 ml",
+          "groep": "Koffie"
         },
         {
           "naam": "Latte macchiato",
           "kcal": 115,
-          "portie": "250 ml"
+          "portie": "250 ml",
+          "groep": "Koffie"
         }
       ],
       "deelregel": "Stuur het naar je schoonmoeder. Of juist niet.",
       "suggesties": [
-        "Slagroomsoesje",
+        "Krentenbol",
         "Plak bananenbrood",
-        "Kokoskoek",
-        "Plakje rozijnencake"
+        "Plakje rozijnencake",
+        "Glas vruchtensap"
       ]
     },
     {
@@ -222,50 +372,100 @@
         {
           "naam": "Snickers",
           "kcal": 242,
-          "portie": "50 g"
+          "portie": "50 g",
+          "groep": "Uit de automaat"
+        },
+        {
+          "naam": "Twix",
+          "kcal": 248,
+          "portie": "2 staafjes, 50 g",
+          "groep": "Uit de automaat"
         },
         {
           "naam": "Mars",
           "kcal": 224,
-          "portie": "50 g"
+          "portie": "50 g",
+          "groep": "Uit de automaat"
         },
         {
           "naam": "KitKat",
           "kcal": 218,
-          "portie": "4 staafjes, 42 g"
+          "portie": "4 staafjes, 42 g",
+          "groep": "Uit de automaat"
         },
         {
-          "naam": "Pakje fruitbiscuits",
-          "kcal": 174,
-          "portie": "3 stuks, 44 g"
+          "naam": "Knoppers",
+          "kcal": 137,
+          "portie": "25 g",
+          "groep": "Uit de automaat"
+        },
+        {
+          "naam": "Klein reepje chocolade",
+          "kcal": 137,
+          "portie": "klein reepje, 25 g",
+          "groep": "Uit de automaat"
         },
         {
           "naam": "Stroopwafel",
           "kcal": 180,
-          "portie": "38 g"
+          "portie": "38 g",
+          "groep": "Uit de trommel"
         },
         {
           "naam": "Gevulde koek",
           "kcal": 304,
-          "portie": "74 g"
+          "portie": "74 g",
+          "groep": "Uit de trommel"
+        },
+        {
+          "naam": "Pakje fruitbiscuits",
+          "kcal": 174,
+          "portie": "3 stuks, 44 g",
+          "groep": "Uit de trommel"
+        },
+        {
+          "naam": "Chocolate chip cookie",
+          "kcal": 105,
+          "portie": "21 g",
+          "groep": "Uit de trommel"
         },
         {
           "naam": "Rijstwafel met chocolade",
           "kcal": 85,
-          "portie": "17 g"
+          "portie": "17 g",
+          "groep": "Uit de trommel"
+        },
+        {
+          "naam": "Mueslireep",
+          "kcal": 114,
+          "portie": "25 g",
+          "groep": "Uit de trommel"
+        },
+        {
+          "naam": "Krentenbol",
+          "kcal": 174,
+          "portie": "65 g",
+          "groep": "Uit de trommel"
+        },
+        {
+          "naam": "Cappuccino",
+          "kcal": 38.8,
+          "portie": "kopje 125 ml",
+          "groep": "Drinken"
         },
         {
           "naam": "Chocolademelk uit de automaat",
           "kcal": 86,
-          "portie": "130 ml"
+          "portie": "130 ml",
+          "groep": "Drinken"
         }
       ],
       "deelregel": "Stuur het naar de collega die er ook één pakte.",
       "suggesties": [
-        "Twix",
-        "Knoppers",
         "Zakje M&M's",
-        "Saucijzenbroodje"
+        "Croissant",
+        "Saucijzenbroodje",
+        "Latte macchiato"
       ]
     },
     {
@@ -289,57 +489,344 @@
       "producten": [
         {
           "naam": "Handje chips",
-          "kcal": 54,
-          "portie": "10 g"
+          "kcal": 54.1,
+          "portie": "10 g",
+          "groep": "Hartig"
+        },
+        {
+          "naam": "Handje tortillachips",
+          "kcal": 62.4,
+          "portie": "13 g",
+          "groep": "Hartig"
+        },
+        {
+          "naam": "Schepje dipsaus",
+          "kcal": 58.6,
+          "portie": "eetlepel, 20 g",
+          "groep": "Hartig"
+        },
+        {
+          "naam": "Handje borrelnoten",
+          "kcal": 133,
+          "portie": "25 g",
+          "groep": "Hartig"
+        },
+        {
+          "naam": "Handje pinda's",
+          "kcal": 155,
+          "portie": "25 g",
+          "groep": "Hartig"
         },
         {
           "naam": "Handje Japanse mix",
           "kcal": 105,
-          "portie": "25 g"
+          "portie": "25 g",
+          "groep": "Hartig"
+        },
+        {
+          "naam": "Schaaltje zoete popcorn",
+          "kcal": 156,
+          "portie": "40 g",
+          "groep": "Hartig"
         },
         {
           "naam": "Handje M&M's",
           "kcal": 87,
-          "portie": "17 g"
+          "portie": "17 g",
+          "groep": "Zoet"
+        },
+        {
+          "naam": "Klein reepje chocolade",
+          "kcal": 137,
+          "portie": "klein reepje, 25 g",
+          "groep": "Zoet"
+        },
+        {
+          "naam": "Handje snoep",
+          "kcal": 98.4,
+          "portie": "30 g",
+          "groep": "Zoet"
         },
         {
           "naam": "Pindarotsje",
           "kcal": 41,
-          "portie": "7 g"
-        },
-        {
-          "naam": "Handje tortillachips",
-          "kcal": 62,
-          "portie": "13 g"
+          "portie": "7 g",
+          "groep": "Zoet"
         },
         {
           "naam": "Bolletje ijs",
           "kcal": 110,
-          "portie": "50 g"
-        },
-        {
-          "naam": "Blikje cola",
-          "kcal": 135,
-          "portie": "330 ml"
+          "portie": "50 g",
+          "groep": "Zoet"
         },
         {
           "naam": "Biertje",
           "kcal": 132,
-          "portie": "flesje 300 ml"
+          "portie": "flesje 300 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas wijn",
+          "kcal": 114,
+          "portie": "150 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Blikje cola",
+          "kcal": 135,
+          "portie": "330 ml",
+          "groep": "Drinken"
         }
       ],
       "deelregel": "Bewijs dat de film goed was.",
       "suggesties": [
-        "Schaaltje zoete popcorn",
+        "Schaaltje chips",
         "Handje kroepoek",
         "Twix",
-        "Glas wijn"
+        "Speciaalbiertje"
+      ]
+    },
+    {
+      "id": "derdehelft",
+      "knop": "Derde helft",
+      "naam": "De derde helft",
+      "tagline": "Gewonnen of verloren: er moet op gedronken worden.",
+      "deeltekst": "In de derde helft",
+      "grappen": {
+        "weinig": [
+          "Je hebt vooral over de wedstrijd gepraat."
+        ],
+        "flink": [
+          "De wedstrijd duurde negentig minuten. De derde helft iets langer."
+        ],
+        "koningszone": [
+          "De uitslag weet morgen niemand meer. Het bonnetje wel: {n}."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Bitterbal",
+          "kcal": 62,
+          "portie": "1 stuk, 17 g",
+          "groep": "Uit de frituur"
+        },
+        {
+          "naam": "Mini-frikandel",
+          "kcal": 65.3,
+          "portie": "1 stuk, 26 g",
+          "groep": "Uit de frituur"
+        },
+        {
+          "naam": "Mini-kaassoufflé",
+          "kcal": 61,
+          "portie": "1 stuk, 17 g",
+          "groep": "Uit de frituur"
+        },
+        {
+          "naam": "Mini-loempia",
+          "kcal": 36,
+          "portie": "1 stuk, 20 g",
+          "groep": "Uit de frituur"
+        },
+        {
+          "naam": "Handje borrelnoten",
+          "kcal": 133,
+          "portie": "25 g",
+          "groep": "Nootjes, chips en kaas"
+        },
+        {
+          "naam": "Handje pinda's",
+          "kcal": 155,
+          "portie": "25 g",
+          "groep": "Nootjes, chips en kaas"
+        },
+        {
+          "naam": "Handje chips",
+          "kcal": 54.1,
+          "portie": "10 g",
+          "groep": "Nootjes, chips en kaas"
+        },
+        {
+          "naam": "Blokje kaas",
+          "kcal": 38,
+          "portie": "10 g",
+          "groep": "Nootjes, chips en kaas"
+        },
+        {
+          "naam": "Plakje droge worst of salami",
+          "kcal": 20,
+          "portie": "5 g",
+          "groep": "Nootjes, chips en kaas"
+        },
+        {
+          "naam": "Glas bier van de tap",
+          "kcal": 88,
+          "portie": "bierglas 200 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Biertje",
+          "kcal": 132,
+          "portie": "flesje 300 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Speciaalbiertje",
+          "kcal": 211,
+          "portie": "330 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Alcoholvrij biertje",
+          "kcal": 78,
+          "portie": "flesje 300 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas wijn",
+          "kcal": 114,
+          "portie": "150 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas frisdrank",
+          "kcal": 82,
+          "portie": "200 ml",
+          "groep": "Drinken"
+        }
+      ],
+      "deelregel": "Stuur het naar je team.",
+      "suggesties": [
+        "Flesje sportdrank",
+        "Handje Japanse mix",
+        "Blokje leverworst",
+        "Schaaltje chips"
+      ]
+    },
+    {
+      "id": "onderweg",
+      "knop": "Onderweg",
+      "naam": "Onderweg",
+      "jouw": "Jouw snacks onderweg",
+      "cta": "Reken je snacks onderweg uit",
+      "tagline": "Je kwam alleen voor benzine.",
+      "deeltekst": "Onderweg",
+      "grappen": {
+        "weinig": [
+          "Alleen getankt. Knap."
+        ],
+        "flink": [
+          "Je stond twee minuten bij de kassa. Dat was genoeg."
+        ],
+        "koningszone": [
+          "{n} frikandellen tussen A en B. Goede reis."
+        ]
+      },
+      "producten": [
+        {
+          "naam": "Saucijzenbroodje",
+          "kcal": 370,
+          "portie": "104 g",
+          "groep": "Broodjes en gebak"
+        },
+        {
+          "naam": "Kaasbroodje",
+          "kcal": 423,
+          "portie": "88 g",
+          "groep": "Broodjes en gebak"
+        },
+        {
+          "naam": "Worstenbroodje",
+          "kcal": 344,
+          "portie": "90 g",
+          "groep": "Broodjes en gebak"
+        },
+        {
+          "naam": "Croissant",
+          "kcal": 248,
+          "portie": "60 g",
+          "groep": "Broodjes en gebak"
+        },
+        {
+          "naam": "Krentenbol",
+          "kcal": 174,
+          "portie": "65 g",
+          "groep": "Broodjes en gebak"
+        },
+        {
+          "naam": "Donut met glazuur",
+          "kcal": 214.8,
+          "portie": "60 g",
+          "groep": "Broodjes en gebak"
+        },
+        {
+          "naam": "Muffin",
+          "kcal": 317.6,
+          "portie": "80 g",
+          "groep": "Broodjes en gebak"
+        },
+        {
+          "naam": "Snickers",
+          "kcal": 242,
+          "portie": "50 g",
+          "groep": "Repen en zakjes"
+        },
+        {
+          "naam": "Twix",
+          "kcal": 248,
+          "portie": "2 staafjes, 50 g",
+          "groep": "Repen en zakjes"
+        },
+        {
+          "naam": "Pakje fruitbiscuits",
+          "kcal": 174,
+          "portie": "3 stuks, 44 g",
+          "groep": "Repen en zakjes"
+        },
+        {
+          "naam": "Zakje chips",
+          "kcal": 216.4,
+          "portie": "kleinverpakking, 40 g",
+          "groep": "Repen en zakjes"
+        },
+        {
+          "naam": "Cappuccino",
+          "kcal": 38.8,
+          "portie": "kopje 125 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Latte macchiato",
+          "kcal": 115,
+          "portie": "250 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Flesje frisdrank",
+          "kcal": 205,
+          "portie": "flesje 500 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Blikje energiedrank",
+          "kcal": 110,
+          "portie": "blikje 250 ml",
+          "groep": "Drinken"
+        }
+      ],
+      "deelregel": "Stuur het naar je reisgenoot.",
+      "suggesties": [
+        "Kokoskoek",
+        "Stroopwafel",
+        "Gevulde koek",
+        "Blikje cola"
       ]
     },
     {
       "id": "gezond",
       "knop": "Gezond tussendoortje",
       "naam": "Het gezonde tussendoortje",
+      "cta": "Reken je gezonde tussendoortje uit",
       "tagline": "Verantwoord gekozen. Toch even rekenen.",
       "deeltekst": "Met een gezond tussendoortje",
       "grappen": {
@@ -356,63 +843,108 @@
       },
       "producten": [
         {
-          "naam": "Bakje Griekse yoghurt",
-          "kcal": 183,
-          "portie": "150 g"
-        },
-        {
-          "naam": "Krentenbol",
-          "kcal": 174,
-          "portie": "65 g"
-        },
-        {
-          "naam": "Smoothie",
-          "kcal": 140,
-          "portie": "250 ml"
-        },
-        {
-          "naam": "Mueslireep",
-          "kcal": 114,
-          "portie": "25 g"
-        },
-        {
-          "naam": "Eiwitreep",
-          "kcal": 278,
-          "portie": "55 g"
-        },
-        {
           "naam": "Handje ongezouten noten",
           "kcal": 164,
-          "portie": "25 g"
+          "portie": "25 g",
+          "groep": "Noten en gedroogd fruit"
         },
         {
           "naam": "Handje studentenhaver",
           "kcal": 124,
-          "portie": "25 g"
+          "portie": "25 g",
+          "groep": "Noten en gedroogd fruit"
         },
         {
-          "naam": "Glas sinaasappelsap",
-          "kcal": 90,
-          "portie": "200 ml"
+          "naam": "Doosje rozijnen",
+          "kcal": 46,
+          "portie": "14 g",
+          "groep": "Noten en gedroogd fruit"
+        },
+        {
+          "naam": "5 dadels",
+          "kcal": 92,
+          "portie": "5 stuks, 30 g",
+          "groep": "Noten en gedroogd fruit"
+        },
+        {
+          "naam": "Bakje Griekse yoghurt",
+          "kcal": 183,
+          "portie": "150 g",
+          "groep": "Yoghurt en repen"
         },
         {
           "naam": "Bakje Griekse yoghurt met krokante muesli",
           "kcal": 319,
-          "portie": "150 g + 30 g muesli"
+          "portie": "150 g + 30 g muesli",
+          "groep": "Yoghurt en repen"
+        },
+        {
+          "naam": "Eiwitreep",
+          "kcal": 278,
+          "portie": "55 g",
+          "groep": "Yoghurt en repen"
+        },
+        {
+          "naam": "Mueslireep",
+          "kcal": 114,
+          "portie": "25 g",
+          "groep": "Yoghurt en repen"
+        },
+        {
+          "naam": "Rijstwafel met chocolade",
+          "kcal": 85,
+          "portie": "17 g",
+          "groep": "Yoghurt en repen"
+        },
+        {
+          "naam": "Plak bananenbrood",
+          "kcal": 224,
+          "portie": "75 g",
+          "groep": "Brood en hartig"
+        },
+        {
+          "naam": "Krentenbol",
+          "kcal": 174,
+          "portie": "65 g",
+          "groep": "Brood en hartig"
+        },
+        {
+          "naam": "Halve avocado",
+          "kcal": 167,
+          "portie": "90 g",
+          "groep": "Brood en hartig"
+        },
+        {
+          "naam": "Hummus met snackgroente",
+          "kcal": 148,
+          "portie": "2 eetlepels + 100 g groente",
+          "groep": "Brood en hartig"
+        },
+        {
+          "naam": "Smoothie",
+          "kcal": 140,
+          "portie": "250 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas vruchtensap",
+          "kcal": 90,
+          "portie": "200 ml",
+          "groep": "Drinken"
         }
       ],
       "deelregel": "Laat zien hoe verantwoord je bezig was.",
       "suggesties": [
-        "5 dadels",
-        "Halve avocado",
-        "Doosje rozijnen",
-        "Plak bananenbrood"
+        "Handje cashewnoten",
+        "Diep bord krokante muesli",
+        "Latte macchiato"
       ]
     },
     {
       "id": "feest",
       "knop": "Sinterklaas en kerst",
       "naam": "Sinterklaas en kerst",
+      "cta": "Reken je Sinterklaas en kerst uit",
       "tagline": "Het is maar één keer per jaar. Of de hele maand december.",
       "deeltekst": "Met Sinterklaas en kerst",
       "grappen": {
@@ -430,98 +962,108 @@
         {
           "naam": "Handje kruidnoten",
           "kcal": 110,
-          "portie": "25 g"
+          "portie": "25 g",
+          "groep": "Sinterklaas"
         },
         {
           "naam": "Handje chocoladekruidnoten",
           "kcal": 172,
-          "portie": "10 stuks, 35 g"
+          "portie": "10 stuks, 35 g",
+          "groep": "Sinterklaas"
         },
         {
-          "naam": "Chocoladeletter",
-          "kcal": 740,
-          "portie": "135 g"
-        },
-        {
-          "naam": "Borstplaatje",
-          "kcal": 35,
-          "portie": "10 g"
-        },
-        {
-          "naam": "Stukje marsepein",
-          "kcal": 105,
-          "portie": "25 g"
-        },
-        {
-          "naam": "Plak kerststol",
-          "kcal": 155,
-          "portie": "55 g"
+          "naam": "Speculaasje",
+          "kcal": 84,
+          "portie": "18 g",
+          "groep": "Sinterklaas"
         },
         {
           "naam": "Plak gevulde speculaas",
           "kcal": 218,
-          "portie": "5 cm, 50 g"
+          "portie": "5 cm, 50 g",
+          "groep": "Sinterklaas"
+        },
+        {
+          "naam": "Chocoladeletter",
+          "kcal": 740,
+          "portie": "135 g",
+          "groep": "Sinterklaas"
+        },
+        {
+          "naam": "Stukje marsepein",
+          "kcal": 105,
+          "portie": "25 g",
+          "groep": "Sinterklaas"
+        },
+        {
+          "naam": "Borstplaatje",
+          "kcal": 35,
+          "portie": "10 g",
+          "groep": "Sinterklaas"
+        },
+        {
+          "naam": "Chocolade kerstkransje",
+          "kcal": 32.9,
+          "portie": "1 kransje, 6 g",
+          "groep": "Kerst en oudjaar"
+        },
+        {
+          "naam": "Stukje banketstaaf",
+          "kcal": 98.2,
+          "portie": "stukje, 25 g",
+          "groep": "Kerst en oudjaar"
+        },
+        {
+          "naam": "Plak kerststol",
+          "kcal": 155,
+          "portie": "55 g",
+          "groep": "Kerst en oudjaar"
+        },
+        {
+          "naam": "Oliebol met krenten",
+          "kcal": 168.3,
+          "portie": "65 g",
+          "groep": "Kerst en oudjaar"
+        },
+        {
+          "naam": "Appelflap",
+          "kcal": 307,
+          "portie": "100 g",
+          "groep": "Kerst en oudjaar"
         },
         {
           "naam": "Beker chocolademelk met slagroom",
           "kcal": 275,
-          "portie": "250 ml + toef"
+          "portie": "250 ml + toef",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glas wijn",
+          "kcal": 114,
+          "portie": "150 ml",
+          "groep": "Drinken"
+        },
+        {
+          "naam": "Glaasje advocaat",
+          "kcal": 118,
+          "portie": "50 ml",
+          "groep": "Drinken"
         }
       ],
       "deelregel": "Stuur het naar de Sint.",
       "suggesties": [
-        "Speculaasje",
-        "Glaasje advocaat",
-        "Toef slagroom",
-        "Glas wijn"
+        "Stuk chocoladeletter",
+        "Biertje",
+        "Punt slagroomtaart",
+        "Toef slagroom (erbij)"
       ]
     }
   ],
   "extra_producten": [
     {
-      "naam": "Saucijzenbroodje",
-      "kcal": 370,
-      "portie": "104 g"
-    },
-    {
-      "naam": "Kaasbroodje",
-      "kcal": 423,
-      "portie": "88 g"
-    },
-    {
-      "naam": "Worstenbroodje",
-      "kcal": 344,
-      "portie": "90 g"
-    },
-    {
-      "naam": "Croissant",
-      "kcal": 248,
-      "portie": "60 g"
-    },
-    {
-      "naam": "Twix",
-      "kcal": 248,
-      "portie": "2 staafjes, 50 g"
-    },
-    {
-      "naam": "Knoppers",
-      "kcal": 137,
-      "portie": "25 g"
-    },
-    {
       "naam": "Handje cashewnoten",
       "kcal": 154,
       "portie": "25 g"
-    },
-    {
-      "naam": "Handje olijven",
-      "kcal": 49,
-      "portie": "10 stuks, 40 g"
-    },
-    {
-      "naam": "Schaaltje zoete popcorn",
-      "kcal": 156,
-      "portie": "40 g"
     },
     {
       "naam": "Handje kroepoek",
@@ -529,53 +1071,8 @@
       "portie": "10 g"
     },
     {
-      "naam": "Slagroomsoesje",
-      "kcal": 127,
-      "portie": "45 g"
-    },
-    {
-      "naam": "Kokoskoek",
-      "kcal": 310,
-      "portie": "60 g"
-    },
-    {
-      "naam": "Plak bananenbrood",
-      "kcal": 224,
-      "portie": "75 g"
-    },
-    {
       "naam": "Plakje rozijnencake",
       "kcal": 115,
-      "portie": "30 g"
-    },
-    {
-      "naam": "Punt slagroomtaart",
-      "kcal": 316,
-      "portie": "100 g"
-    },
-    {
-      "naam": "Glaasje advocaat",
-      "kcal": 118,
-      "portie": "50 ml"
-    },
-    {
-      "naam": "Speculaasje",
-      "kcal": 84,
-      "portie": "18 g"
-    },
-    {
-      "naam": "Halve avocado",
-      "kcal": 167,
-      "portie": "90 g"
-    },
-    {
-      "naam": "Doosje rozijnen",
-      "kcal": 46,
-      "portie": "14 g"
-    },
-    {
-      "naam": "5 dadels",
-      "kcal": 92,
       "portie": "30 g"
     },
     {
@@ -589,14 +1086,19 @@
       "portie": "45 g"
     },
     {
-      "naam": "Bitterbal",
-      "kcal": 62,
-      "portie": "1 stuk, 17 g"
+      "naam": "Stuk chocoladeletter",
+      "kcal": 137,
+      "portie": "25 g"
     },
     {
-      "naam": "Mini-loempia",
-      "kcal": 36,
-      "portie": "1 stuk, 20 g"
+      "naam": "Schaaltje chips",
+      "kcal": 216,
+      "portie": "40 g"
+    },
+    {
+      "naam": "Flesje sportdrank",
+      "kcal": 115,
+      "portie": "500 ml"
     }
   ]
 }
