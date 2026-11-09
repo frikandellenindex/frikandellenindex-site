@@ -275,6 +275,116 @@
     ]
   },
   {
+    "moment": "Derde helft",
+    "lijst": [
+      {
+        "wat": "2 speciaalbiertjes",
+        "hoeveel": "660 ml",
+        "frikandellen": 2.3
+      },
+      {
+        "wat": "3 handjes borrelnoten",
+        "hoeveel": "75 g",
+        "frikandellen": 2.2
+      },
+      {
+        "wat": "6 bitterballen",
+        "hoeveel": "102 g",
+        "frikandellen": 2.1
+      },
+      {
+        "wat": "3 glazen bier van de tap",
+        "hoeveel": "600 ml",
+        "frikandellen": 1.5
+      },
+      {
+        "wat": "4 mini-frikandellen",
+        "hoeveel": "104 g",
+        "frikandellen": 1.5
+      },
+      {
+        "wat": "4 mini-kaassoufflés",
+        "hoeveel": "68 g",
+        "frikandellen": 1.4
+      },
+      {
+        "wat": "4 stukjes droge worst",
+        "hoeveel": "48 g",
+        "frikandellen": 1.0
+      },
+      {
+        "wat": "3 handjes chips",
+        "hoeveel": "30 g",
+        "frikandellen": 0.9
+      },
+      {
+        "wat": "2 glazen frisdrank",
+        "hoeveel": "400 ml",
+        "frikandellen": 0.9
+      },
+      {
+        "wat": "2 alcoholvrije biertjes",
+        "hoeveel": "600 ml",
+        "frikandellen": 0.9
+      }
+    ]
+  },
+  {
+    "moment": "Onderweg",
+    "lijst": [
+      {
+        "wat": "Kaasbroodje",
+        "hoeveel": "88 g",
+        "frikandellen": 2.4
+      },
+      {
+        "wat": "Saucijzenbroodje",
+        "hoeveel": "104 g",
+        "frikandellen": 2.1
+      },
+      {
+        "wat": "Worstenbroodje",
+        "hoeveel": "90 g",
+        "frikandellen": 1.9
+      },
+      {
+        "wat": "Muffin",
+        "hoeveel": "80 g",
+        "frikandellen": 1.8
+      },
+      {
+        "wat": "Croissant",
+        "hoeveel": "60 g",
+        "frikandellen": 1.4
+      },
+      {
+        "wat": "Snickers",
+        "hoeveel": "50 g",
+        "frikandellen": 1.3
+      },
+      {
+        "wat": "Zakje chips",
+        "hoeveel": "40 g",
+        "frikandellen": 1.2
+      },
+      {
+        "wat": "Donut met glazuur",
+        "hoeveel": "60 g",
+        "frikandellen": 1.2
+      },
+      {
+        "wat": "Flesje frisdrank",
+        "hoeveel": "500 ml",
+        "frikandellen": 1.1
+      },
+      {
+        "wat": "Latte macchiato",
+        "hoeveel": "250 ml",
+        "frikandellen": 0.6
+      }
+    ]
+  },
+  {
     "moment": "Gezond tussendoortje",
     "lijst": [
       {
