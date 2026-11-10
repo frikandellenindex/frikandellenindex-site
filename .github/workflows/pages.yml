@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Elke ochtend opnieuw bouwen (05:00 UTC = 06:00 in de winter, 07:00 in de zomer),
+    # zodat berichten met een datum in de toekomst vanzelf verschijnen (document 19, C1).
+    - cron: "0 5 * * *"
 
 permissions:
   contents: read
