@@ -268,5 +268,34 @@
   "noot": "Besproken: 1,0. Niet besproken: 2,0.",
   "beeld": "frikandel-in-teams.jpg",
   "beeld_alt": "Over de schouder van een vrouw achter een laptop: in een videovergadering houdt een man een frikandel omhoog, de andere deelnemers kijken naar hem. Op het bureau staan een lege mok koffie en een bordje met stroopwafelkruimels en een laatste stukje stroopwafel."
+ },
+ {
+  "slug": "sint-maarten-schaal-leeg",
+  "datum": "2026-11-12",
+  "moment": "tv",
+  "plaats": "ALMERE",
+  "kop": "Stel koopt snoep voor veertig Sint-Maartenkinderen, er bellen er negen aan; schaal toch leeg",
+  "tekst": [
+   "Een stel dat snoep had ingeslagen voor veertig Sint-Maartenkinderen, had woensdagavond om acht uur een lege schaal. Er hadden negen kinderen aangebeld.",
+   "Volgens de man is al het snoep gewoon uitgedeeld. “Alleen niet allemaal aan de deur.”",
+   "Tussen de aanbellers door vond hij het belangrijk de schaal in de gaten te houden. “Je wilt niet dat het tegen achten muf is.”",
+   "Zijn vrouw zegt dat ze zelf alleen iets nam als er goed gezongen werd. Eén snoepje per liedje. Ze vond alle liedjes goed, ook die bij de buren, die door de muur te horen waren.",
+   "Toen om half negen nog een groepje aanbelde, deed niemand open. Het licht in de gang ging uit.",
+   "Voor volgend jaar overweegt het stel meer snoep te kopen. Voor de zekerheid."
+  ],
+  "bon_titel": "Niet aan de deur gekomen",
+  "bon": [
+   {
+    "wat": "3 handjes snoep (90 g)",
+    "kcal": 294
+   },
+   {
+    "wat": "1 zakje M&M's (45 g)",
+    "kcal": 230
+   }
+  ],
+  "noot": "Per persoon. Negen kinderen niet meegeteld.",
+  "beeld": "sint-maarten-schaal-leeg.jpg",
+  "beeld_alt": "Woonkamer in de avond: op de salontafel staat een lege glazen schaal met nog één snoepje erin, ernaast lege snoeppapiertjes en twee mokken. Iemand zit op de bank, alleen zijn arm is te zien. Achter in de gang is de voordeur dicht."
  }
 ]
