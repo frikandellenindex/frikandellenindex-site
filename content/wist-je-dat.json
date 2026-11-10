@@ -80,6 +80,68 @@
   "bijgewerkt": "oktober 2026"
  },
  {
+  "slug": "kruidnoten",
+  "naam": "kruidnoten",
+  "kort": "kruidnoten",
+  "vraag": "Hoeveel calorieën hebben pepernoten en kruidnoten?",
+  "moment": "feest",
+  "antwoord": "Tien kruidnoten (17 gram) hebben 75 kcal: <b>0,4 frikandel</b>. Tien chocoladekruidnoten (35 gram) hebben 172 kcal: <b>1 frikandel</b>.",
+  "knipoog": "Tien is tien. Behalve als er chocolade omheen zit.",
+  "kop": "Kruidnoten",
+  "rijen": [
+   [
+    "10 kruidnoten (17 g)",
+    75
+   ],
+   [
+    "15 kruidnoten (25 g)",
+    110
+   ],
+   [
+    "20 kruidnoten (34 g)",
+    150
+   ],
+   [
+    "24 kruidnoten (41 g)",
+    181
+   ],
+   [
+    "10 chocoladekruidnoten (35 g)",
+    172
+   ],
+   [
+    "20 chocoladekruidnoten (70 g)",
+    343
+   ]
+  ],
+  "tekst": [
+   "Een kruidnoot weegt ongeveer 1,7 gram en heeft 7,5 kcal. Een handje is bij de een tien kruidnoten en bij de ander twintig, dus wij tellen in stuks. Het RIVM rekent tien stuks als een handje. Bij 24 kruidnoten zit je op één frikandel.",
+   "Een chocoladekruidnoot weegt ruim twee keer zoveel: 3,5 gram. Daardoor is één chocoladekruidnoot ruim twee keer zoveel als een gewone. Per gram scheelt het maar zo'n tien procent. Melk, puur of wit maakt nauwelijks uit.",
+   "Kruidnoten tellen niet, zegt iedereen. Deze pagina wel."
+  ],
+  "extra": [
+   [
+    "Wat is het verschil tussen een pepernoot en een kruidnoot?",
+    "Wat de meeste mensen pepernoten noemen, zijn eigenlijk kruidnoten: de kleine, knapperige ronde koekjes met speculaaskruiden. Echte pepernoten zijn zacht en onregelmatig van vorm, met roggemeel, honing en anijs. Die vind je vooral bij de bakker. Voor echte pepernoten hebben we nog geen betrouwbaar getal, daarom staan ze niet in de tabel."
+   ],
+   [
+    "Zijn chocoladepepernoten meer dan gewone?",
+    "Ja. Tien chocoladekruidnoten (35 gram) zijn 172 kcal: afgerond 1 frikandel. Tien gewone kruidnoten (17 gram) zijn 75 kcal: 0,4 frikandel. Je pakt er evenveel, maar het telt ruim twee keer zo zwaar."
+   ]
+  ],
+  "links": [
+   [
+    "/blog/avondje-sinterklaas/",
+    "Lees: Hoeveel frikandellen zitten er in een avondje Sinterklaas?"
+   ],
+   [
+    "/calorieen-chocoladeletter/",
+    "Hoeveel calorieën heeft een chocoladeletter?"
+   ]
+  ],
+  "bijgewerkt": "november 2026"
+ },
+ {
   "slug": "chips",
   "naam": "een zak chips",
   "kort": "chips",

@@ -962,15 +962,15 @@
       },
       "producten": [
         {
-          "naam": "Handje kruidnoten",
-          "kcal": 110,
-          "portie": "25 g",
+          "naam": "10 kruidnoten",
+          "kcal": 75.1,
+          "portie": "klein handje, 17 g",
           "groep": "Sinterklaas"
         },
         {
-          "naam": "Handje chocoladekruidnoten",
+          "naam": "10 chocoladekruidnoten",
           "kcal": 172,
-          "portie": "10 stuks, 35 g",
+          "portie": "35 g",
           "groep": "Sinterklaas"
         },
         {
