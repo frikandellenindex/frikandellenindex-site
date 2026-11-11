@@ -73,9 +73,9 @@
           "groep": "Kaas, worst en hapjes"
         },
         {
-          "naam": "Plakje stokbrood met kruidenboter",
+          "naam": "Sneetje stokbrood met kruidenboter",
           "kcal": 60.6,
-          "portie": "plakje 2 cm, 20 g",
+          "portie": "sneetje 2 cm, 20 g",
           "groep": "Kaas, worst en hapjes"
         },
         {
@@ -111,6 +111,7 @@
       ],
       "deelregel": "Laat zien hoe gezellig het was.",
       "suggesties": [
+        "Gevuld zoet pepertje",
         "Mini-loempia",
         "Mini-frikandel",
         "Handje Japanse mix",
@@ -196,9 +197,9 @@
           "groep": "Hapjes"
         },
         {
-          "naam": "Handje Japanse mix",
-          "kcal": 105,
-          "portie": "25 g",
+          "naam": "Plakje komkommer met heksenkaas",
+          "kcal": 29.8,
+          "portie": "10 g + 8 g heksenkaas",
           "groep": "Hapjes"
         },
         {
@@ -233,7 +234,8 @@
         "Blokje brie",
         "Slagroomsoesje",
         "Plakje rozijnencake",
-        "5 olijven"
+        "5 olijven",
+        "Handje Japanse mix"
       ]
     },
     {
@@ -1106,6 +1108,11 @@
       "naam": "Plakje salami",
       "kcal": 31.4,
       "portie": "8 g"
+    },
+    {
+      "naam": "Gevuld zoet pepertje",
+      "kcal": 24.2,
+      "portie": "1 stuk, 15 g"
     }
   ]
 }
