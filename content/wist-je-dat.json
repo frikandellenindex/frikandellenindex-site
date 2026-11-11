@@ -142,6 +142,64 @@
   "bijgewerkt": "november 2026"
  },
  {
+  "slug": "kroket",
+  "naam": "een kroket",
+  "kort": "kroket",
+  "vraag": "Hoeveel calorieën heeft een kroket?",
+  "moment": "derdehelft",
+  "antwoord": "Een gefrituurde kroket (63 gram) heeft 171 kcal: <b>1 frikandel</b>. Uit de airfryer is het 1,1.",
+  "knipoog": "De eeuwige rivalen van de snackbar. Op calorieën is het gelijkspel.",
+  "kop": "Kroket en co",
+  "rijen": [
+   [
+    "Kroket, gefrituurd (63 g)",
+    171
+   ],
+   [
+    "Grote kroket, gefrituurd (90 g)",
+    245
+   ],
+   [
+    "Oven- of airfryerkroket (80 g)",
+    198
+   ],
+   [
+    "Kaassoufflé, gefrituurd (57 g)",
+    205
+   ],
+   [
+    "Bitterbal (17 g)",
+    62
+   ],
+   [
+    "3 bitterballen (51 g)",
+    185
+   ]
+  ],
+  "tekst": [
+   "Een gewone vleeskroket uit de frituur weegt ongeveer 63 gram en heeft 171 kcal. Dat is vrijwel precies één frikandel. Een grote kroket van de snackbar (90 gram) komt op 1,4.",
+   "De airfryer scheelt bij de kroket minder dan je denkt. Een oven- of airfryerkroket is groter (80 gram) en heeft al een voorgebakken korstje: 1,1 frikandel. Net zoveel als de kroket uit de frituur.",
+   "Kaassoufflé en bitterbal spelen in dezelfde klasse. Eén kaassoufflé is 1,1 frikandel, drie bitterballen zijn er 1. Eén bitterbal telt niemand. Drie wel, op deze pagina."
+  ],
+  "extra": [
+   [
+    "Heeft een kroket uit de airfryer minder calorieën?",
+    "Nauwelijks. Een oven- of airfryerkroket (80 gram) heeft ongeveer 200 kcal: 1,1 frikandel. Een gefrituurde kroket (63 gram) heeft 171 kcal: 1,0 frikandel. De airfryerkroket is groter en heeft al een voorgebakken korstje."
+   ],
+   [
+    "Wat heeft meer calorieën, een kroket of een frikandel?",
+    "Ze zijn ongeveer gelijk: een gefrituurde kroket heeft 171 kcal, een frikandel 180 kcal. Een frikandel speciaal is met 1,8 frikandel wel een stuk meer."
+   ]
+  ],
+  "links": [
+   [
+    "/calorieen-frikandel/",
+    "Hoeveel calorieën heeft een frikandel?"
+   ]
+  ],
+  "bijgewerkt": "november 2026"
+ },
+ {
   "slug": "chips",
   "naam": "een zak chips",
   "kort": "chips",
