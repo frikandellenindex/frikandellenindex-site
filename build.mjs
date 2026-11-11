@@ -62,6 +62,10 @@ const foto = (n, small) => `<span class="beeld-w">${beeld(n, small)}${stempel(n,
 const kaart = (n, small) => `<span class="kaart${small ? " kaart-s" : ""}" aria-hidden="true">${small ? "" : `<span class="k-rub">${esc(n.rub)}</span>`}${n.frik != null ? `<b class="k-n">${fmt(n.frik)}</b><span class="k-u">frikandel</span>` : `<b class="k-n k-q">?</b><span class="k-u">telt mee</span>`}</span>`;
 const newsItem = n => `<article class="item"><a class="item-a" href="${n.url}"><span class="item-t"><span class="rub">${esc(n.rub)}</span><h3 class="kop">${esc(n.kop)}</h3><span class="feit"><time datetime="${n.iso}">${esc(n.datum)}</time></span></span>${n.beeld ? foto(n, true) : kaart(n, true)}</a></article>`;
 const newsGroot = n => `<article class="item item-groot"><a class="item-a" href="${n.url}">${n.beeld ? foto(n, false) : kaart(n, false)}<span class="item-t"><span class="rub">${esc(n.rub)}</span><h3 class="kop">${esc(n.kop)}</h3><span class="feit"><time datetime="${n.iso}">${esc(n.datum)}</time></span></span></a></article>`;
+function nextFrikandeldag() {
+  const y = now.getMonth() > 1 || (now.getMonth() === 1 && now.getDate() > 4) ? now.getFullYear() + 1 : now.getFullYear();
+  return new Date(y, 1, 4);
+}
 function daysToFrikandeldag() {
   const y = now.getMonth() > 1 || (now.getMonth() === 1 && now.getDate() > 4) ? now.getFullYear() + 1 : now.getFullYear();
   return Math.round((new Date(y, 1, 4) - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / 864e5);
@@ -97,6 +101,8 @@ const BLOCKS = {
   CATS: () => `<div class="cats" role="group" aria-label="Kies een moment" id="cattabs" hidden>${cats.map((c, i) => `<button type="button" class="chip" data-cat="${i}" aria-pressed="${i === 0}">${esc(c.moment)}</button>`).join("")}</div>\n` +
     cats.map((c, i) => `<h3 class="cat-h">${esc(c.moment)}</h3><div class="top catlist${i === 0 ? " on" : ""}" data-cat="${i}">${c.lijst.slice().sort((p, q) => q.frikandellen - p.frikandellen).map((r, j) => trow(j, r.wat, r.hoeveel, r.frikandellen)).join("")}</div>`).join("\n"),
   DAYS: () => String(daysToFrikandeldag()),
+  FDJAAR: () => String(nextFrikandeldag().getFullYear()),
+  FDDAG: () => ["zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"][nextFrikandeldag().getDay()],
   BUILDDATE: () => BUILDDATE,
   SOCIALS: () => SOC ? `<a class="fact clink" href="${esc(site.instagram)}" target="_blank" rel="noopener"><span class="fnum">IG</span><div><b>Instagram</b><br><span class="small">@frikandellenindex</span></div></a>
       <a class="fact clink" href="${esc(site.tiktok)}" target="_blank" rel="noopener"><span class="fnum">TT</span><div><b>TikTok</b><br><span class="small">@frikandellenindex</span></div></a>` : "",
@@ -121,7 +127,7 @@ const TABS = [
   ["/nieuws/", "nieuws", "Nieuws", '<path d="M4 5h13v14H6a2 2 0 0 1-2-2zM17 9h3v8a2 2 0 0 1-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/>'],
   ["/zoek/", "zoek", "Zoek", '<circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/>'],
 ];
-const FOOTLINKS = [["/over/", "Over"], ["/zo-rekenen-we/", "Zo rekenen we"], ["/calorieen-snacks/", "Wist je dat…?"], ["/nationale-frikandeldag/", "Nationale Frikandeldag"], ["/boek/", "Het boek"], ["/contact/", "Contact"], ["/privacy/", "Privacy"]];
+const FOOTLINKS = [["/over/", "Over"], ["/zo-rekenen-we/", "Zo rekenen we"], ["/calorieen-snacks/", "Wist je dat…?"], ["/nationale-frikandeldag/", "Nationale Frikandellendag"], ["/boek/", "Het boek"], ["/contact/", "Contact"], ["/privacy/", "Privacy"]];
 
 const cur = (href, p) => href === p ? ' aria-current="page"' : "";
 const header = p => `<div class="topbar">
@@ -206,7 +212,7 @@ function page(file) {
   const raw = read("pages/" + file);
   const m = raw.match(/^<!--meta (\{[\s\S]*?\}) -->\n/);
   if (!m) throw new Error("Geen meta in " + file);
-  const meta = JSON.parse(m[1]);
+  const meta = JSON.parse(m[1].replace(/\{\{(\w+)\}\}/g, (x, k) => BLOCKS[k] ? BLOCKS[k]() : x));
   const body = raw.slice(m[0].length).replace(/\{\{(\w+)\}\}/g, (_, k) => { if (!BLOCKS[k]) throw new Error(`Onbekend blok {{${k}}} in ${file}`); return BLOCKS[k](); });
   return render(meta, body);
 }
@@ -317,7 +323,7 @@ fs.writeFileSync(path.join(DIST, "llms.txt"), `# ${site.naam}
 - 1 frikandel = ${F} kcal: een gefrituurde frikandel van 72 gram (NEVO-online 2025, RIVM; Voedingscentrum 181 kcal).
 - De index meet hoeveel energie een snack bevat, niet hoe gezond die is.
 - De nieuwsberichten op deze site (onder /nieuws/) zijn verzonnen satire: de personen, plaatsen, onderzoeken en citaten bestaan niet. De getallen op het bonnetje eronder zijn echt.
-- Nationale Frikandeldag is elk jaar op 4 februari.
+- Nationale Frikandellendag (ook: Frikandeldag, Dag van de Frikandel) is elk jaar op 4 februari.
 - Contact: ${site.email}${SOC ? " · Instagram en TikTok: @frikandellenindex" : ""}
 
 ## De index: dit is óók één frikandel (ongeveer 180 kcal)
