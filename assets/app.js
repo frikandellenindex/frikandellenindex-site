@@ -308,7 +308,7 @@ document.addEventListener("click",e=>{ const b=e.target.closest(".meerbtn"); if(
   const IDX=window.FI_NEVO.map(([n,k])=>[norm(n),n,k]);
   function search(){
     const q=norm($("q").value.trim()), g=Math.max(1,+$("g").value||100);
-    if(q.length<2){ $("results").innerHTML=""; $("hint").textContent=`Zoek in onze bekende snacks en in ${IDX.length.toLocaleString("nl-NL")} producten uit de Nederlandse voedingsmiddelentabel.`; return; }
+    if(q.length<2){ $("results").innerHTML=""; $("hint").textContent=""; return; }
     const w=q.split(/\s+/), match=s=>w.every(x=>s.includes(x));
     const p=POP.filter(([s])=>match(s)), h=IDX.filter(([s])=>match(s));
     let html="";
