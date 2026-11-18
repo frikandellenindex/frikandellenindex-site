@@ -202,7 +202,7 @@ ${meta.noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonica
 <link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/bowlby-one.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="/assets/fonts/bricolage-grotesque.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/assets/fonts/lora.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="/assets/style.css?v=${V}">
 ${jsonld(meta)}${gc}
 </head>`;

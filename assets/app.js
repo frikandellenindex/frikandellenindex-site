@@ -154,9 +154,9 @@ document.addEventListener("click",e=>{ const b=e.target.closest(".meerbtn"); if(
   function wrap(ctx,text,maxW){ const words=text.split(" "), lines=[]; let line="";
     words.forEach(w=>{ const t=line?line+" "+w:w; if(ctx.measureText(t).width>maxW && line){ lines.push(line); line=w; } else line=t; }); if(line) lines.push(line); return lines; }
   async function bonCanvas(){
-    try{ await Promise.all(['500 30px "JetBrains Mono"','40px "Bowlby One"','700 30px "Bricolage Grotesque"'].map(f=>document.fonts.load(f))); }catch(e){}
+    try{ await Promise.all(['500 30px "JetBrains Mono"','40px "Bowlby One"','700 30px "Lora"'].map(f=>document.fonts.load(f))); }catch(e){}
     const W=1080,H=1350,c=document.createElement("canvas"); c.width=W; c.height=H; const x=c.getContext("2d");
-    const MONO='"JetBrains Mono", ui-monospace, monospace', DISP='"Bowlby One","Arial Black",sans-serif', BODY='"Bricolage Grotesque", system-ui, sans-serif';
+    const MONO='"JetBrains Mono", ui-monospace, monospace', DISP='"Bowlby One","Arial Black",sans-serif', BODY='"Lora", Georgia, serif';
     x.fillStyle="#C2362B"; x.fillRect(0,0,W,H);
     x.fillStyle="#FFF5DA"; x.textAlign="center"; x.font=`54px ${DISP}`; x.fillText("De Frikandellenindex",W/2,118);
     const r=rows().map(([name,k],i)=>[name,counts[i]||0,k]).filter(z=>z[1]>0);

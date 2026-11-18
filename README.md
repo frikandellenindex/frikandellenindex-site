@@ -28,5 +28,5 @@ Let op bij JSON: tekst tussen "dubbele aanhalingstekens", komma tussen items, ge
 ## Technisch
 
 - `node build.mjs` bouwt alles naar `dist/` (geen extra pakketten nodig).
-- Lettertypes: Bowlby One, Bricolage Grotesque, JetBrains Mono (SIL Open Font License), zelf gehost in `assets/fonts`.
+- Lettertypes: Bowlby One, Lora, JetBrains Mono (SIL Open Font License), zelf gehost in `assets/fonts`.
 - Statistieken: GoatCounter, zonder cookies. Zet de code in `content/site.json` bij `goatcounter`.

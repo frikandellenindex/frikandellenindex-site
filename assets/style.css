@@ -1,5 +1,6 @@
 @font-face{font-family:"Bowlby One";src:url(/assets/fonts/bowlby-one.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:"Bricolage Grotesque";src:url(/assets/fonts/bricolage-grotesque.woff) format("woff");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Lora";src:url(/assets/fonts/lora.woff) format("woff");font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Lora";src:url(/assets/fonts/lora-italic.woff) format("woff");font-weight:400 700;font-style:italic;font-display:swap}
 @font-face{font-family:"JetBrains Mono";src:url(/assets/fonts/jetbrains-mono-500.woff) format("woff");font-weight:400 600;font-style:normal;font-display:swap}
 /* Layout: snackbarmuur met tegels. Eén kolom, app-achtige tabbalk onderin, menubord (donker) voor de calculator. */
 :root{
@@ -8,7 +9,7 @@
   --curry:#C2362B; --mayo:#F2D27A; --del:#7A4425; --card:#FFFFFF; --nav:#FFFDF7;
   --cheese:#E9B93A; --wine:#8E1F2E; --beer:#D9952B; --foam:#FBF6E8; --nut:#B07A44;
   --display:"Bowlby One","Arial Black",Impact,sans-serif;
-  --body:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Lora",Georgia,"Times New Roman",serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
