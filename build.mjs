@@ -274,9 +274,10 @@ function wistPage(w) {
     <a class="link" href="/calorieen-snacks/">← Wist je dat…?</a>
     <span class="eyebrow">Calorieën</span>
     <h1 class="h2">${esc(vraag)}</h1>
-    <div class="antwoord"><p>${w.antwoord}</p></div>
+    <div class="antwoord"><p>${w.antwoord}</p>${w.perstuk ? `<ul class="perstuk">${w.perstuk.map(([l, g, k]) => `<li><b>${esc(l)}</b> <span>${esc(g)} · ${esc(k)}</span></li>`).join("")}</ul>` : ""}</div>
     <p class="lead">${esc(w.knipoog)}</p>
     <div class="tablewrap"><table class="letters"><thead><tr><th>${esc(w.kop)}</th><th>Frikandel</th></tr></thead><tbody>${w.rijen.map(([l, k]) => `<tr${l === "Samen" ? ' class="ref"' : ""}><td>${esc(l)}</td><td><b>${fmt(k / F)}</b><span>${k} kcal</span></td></tr>`).join("")}</tbody></table></div>
+    ${(w.boven || []).map(([q, a]) => `<h2 class="h3">${esc(q)}</h2><p>${esc(a)}</p>`).join("")}
     ${w.tekst.map(t => `<p>${esc(t)}</p>`).join("")}
     ${w.extra.map(([q, a]) => `<h2 class="h3">${esc(q)}</h2><p>${esc(a)}</p>`).join("")}
     <a class="cta" href="/reken/?moment=${m.id}">${esc(ctaTekst(m))} →</a>
@@ -284,7 +285,7 @@ function wistPage(w) {
     <a class="link" href="/calorieen-snacks/">Meer weetjes: alle snacks in frikandellen →</a>
     <p class="small">Energie volgens NEVO-online 2025/9.0 (RIVM). Porties volgens RIVM Portie-online of het winkelgewicht. De index meet hoeveel, niet hoe gezond. <a class="link" href="/zo-rekenen-we/">Zo rekenen we →</a><br>Bijgewerkt: ${esc(w.bijgewerkt || "oktober 2026")}</p>
   </article>`;
-  return render({ title: `${vraag} | ${site.naam}`, description: plat(w.antwoord).slice(0, 155), path: `/calorieen-${w.slug}/`, tab: "", faq: [[vraag, plat(w.antwoord)], ...w.extra] }, body);
+  return render({ title: `${w.titel || vraag} | ${site.naam}`, description: w.omschrijving || plat(w.antwoord).slice(0, 155), path: `/calorieen-${w.slug}/`, tab: "", faq: [[vraag, plat(w.antwoord)], ...(w.boven || []), ...w.extra] }, body);
 }
 
 // --- bouwen ---

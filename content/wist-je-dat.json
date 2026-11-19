@@ -115,8 +115,8 @@
    ]
   ],
   "tekst": [
-   "Een kruidnoot weegt ongeveer 1,7 gram en heeft 7,5 kcal. Een handje is bij de een tien kruidnoten en bij de ander twintig, dus wij tellen in stuks. Het RIVM rekent tien stuks als een handje. Bij 24 kruidnoten zit je op één frikandel.",
-   "Een chocoladekruidnoot weegt ruim twee keer zoveel: 3,5 gram. Daardoor is één chocoladekruidnoot ruim twee keer zoveel als een gewone. Per gram scheelt het maar zo'n tien procent. Melk, puur of wit maakt nauwelijks uit.",
+   "Een handje is bij de een tien kruidnoten en bij de ander twintig, dus wij tellen in stuks. Het RIVM rekent tien stuks als een handje. Bij 24 kruidnoten zit je op één frikandel.",
+   "Een chocoladekruidnoot is ruim twee keer zoveel als een gewone, omdat hij twee keer zo zwaar is. Per gram scheelt het maar zo'n tien procent. Melk, puur of wit maakt nauwelijks uit.",
    "Kruidnoten tellen niet, zegt iedereen. Deze pagina wel."
   ],
   "extra": [
@@ -139,7 +139,31 @@
     "Hoeveel calorieën heeft een chocoladeletter?"
    ]
   ],
-  "bijgewerkt": "november 2026"
+  "bijgewerkt": "november 2026",
+  "titel": "Pepernoten en kruidnoten: calorieën en gewicht",
+  "omschrijving": "Een kruidnoot weegt ongeveer 1,7 gram en heeft 7,5 kcal. Tien kruidnoten (17 g) zijn 0,4 frikandel, tien chocoladekruidnoten (35 g) 1 frikandel.",
+  "perstuk": [
+   [
+    "1 kruidnoot",
+    "1,7 g",
+    "7,5 kcal"
+   ],
+   [
+    "1 chocoladekruidnoot",
+    "3,5 g",
+    "17 kcal"
+   ]
+  ],
+  "boven": [
+   [
+    "Hoeveel weegt een kruidnoot of pepernoot?",
+    "Een kruidnoot weegt ongeveer 1,7 gram en heeft 7,5 kcal. Een chocoladekruidnoot weegt ongeveer 3,5 gram en heeft 17 kcal: twee keer zo zwaar. Dat komt van het RIVM, dat tien stuks als een handje rekent: 17 gram gewone en 35 gram chocoladekruidnoten. Per merk scheelt het een beetje. En 24 kruidnoten wegen samen 41 gram: precies één frikandel."
+   ],
+   [
+    "Hoeveel kruidnoten is 25 gram?",
+    "Ongeveer 15 kruidnoten, of 7 chocoladekruidnoten. 25 gram gewone kruidnoten heeft 110 kcal: 0,6 frikandel."
+   ]
+  ]
  },
  {
   "slug": "kroket",

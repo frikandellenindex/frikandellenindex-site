@@ -385,6 +385,7 @@ table.letters td,table.letters th{text-align:right}
 table.letters td:first-child,table.letters th:first-child{text-align:left}
 .antwoord{border-left:4px solid var(--curry);background:var(--card);padding:14px 16px;border-radius:0 6px 6px 0}
 .antwoord p{margin:0}
+.perstuk{list-style:none;margin:10px 0 0;padding:10px 0 0;border-top:1px dashed var(--line);display:grid;gap:4px}.perstuk li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.perstuk span{font-family:var(--mono);font-size:.88em;color:var(--muted)}
 .faq{display:flex;flex-direction:column;gap:14px}.faq-i{border-bottom:1px solid var(--line);padding-bottom:12px}.faq-i p{margin:4px 0 0}.faq-i i{color:var(--muted)}
 
 /* blogs: stempel en getal op kaartjes */
