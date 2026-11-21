@@ -260,6 +260,7 @@ function artikel(n) {
   <div class="art-tekst">${n.tekst.map((p, i) => `<p>${i === 0 ? `<b class="plaats">${esc(n.plaats)}</b> — ` : ""}${esc(p)}</p>`).join("")}</div>
   <div class="bon art-bon" role="group" aria-label="Bonnetje bij dit bericht"><div class="bon-h"><b>SNACKBAR DE INDEX</b><span>${esc(n.bon_titel || n.rub)}</span></div>${rows}<div class="bon-f">${esc(n.noot)}</div></div>
   <div class="art-acties"><a class="cta" href="${n.rubLink}">${esc(n.cta)}</a><button type="button" class="deel" data-deel="${esc(n.slug)}">Deel dit bericht</button><span class="deel-ok small" role="status"></span></div>
+  ${(n.links || []).map(([h, t]) => `<a class="link" href="${h}">${esc(t)} →</a>`).join("")}
   <section class="stack meer" aria-labelledby="h-meer"><div class="sechead"><span class="eyebrow">Laatste nieuws</span><h2 id="h-meer">${zelfde.length ? `Meer over: ${esc(n.rub.toLowerCase())}` : "Meer nieuws"}</h2></div><div class="news">${meer.map(newsItem).join("")}</div></section>
 </article>`;
   return render({ title: n.kop, description: n.tekst[0].slice(0, 155), path: n.url, tab: "nieuws", art: n }, body);

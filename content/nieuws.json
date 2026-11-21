@@ -21,7 +21,13 @@
   ],
   "noot": "Afgebroken onderkanten niet meegeteld.",
   "beeld": "vader-sinterklaas-chocoladeletters.jpg",
-  "beeld_alt": "Een hand houdt een chocoladeletter J vast waarvan het haakje onderaan is afgebroken. Ervoor ligt de lege verpakking met kruimels, naast een schaal pepernoten."
+  "beeld_alt": "Een hand houdt een chocoladeletter J vast waarvan het haakje onderaan is afgebroken. Ervoor ligt de lege verpakking met kruimels, naast een schaal pepernoten.",
+  "links": [
+   [
+    "/calorieen-kruidnoten/",
+    "En de kruidnoten? Calorieën en gewicht per stuk"
+   ]
+  ]
  },
  {
   "slug": "man-weigert-tweede-frikandel",
@@ -297,5 +303,35 @@
   "noot": "Per persoon. Negen kinderen niet meegeteld.",
   "beeld": "sint-maarten-schaal-leeg.jpg",
   "beeld_alt": "Woonkamer in de avond: op de salontafel staat een lege glazen schaal met nog één snoepje erin, ernaast lege snoeppapiertjes en twee mokken. Iemand zit op de bank, alleen zijn arm is te zien. Achter in de gang is de voordeur dicht."
+ },
+ {
+  "slug": "kruidnoten-keukenweegschaal",
+  "datum": "2026-11-21",
+  "moment": "feest",
+  "plaats": "TILBURG",
+  "kop": "Kantoor zet schaal kruidnoten op keukenweegschaal; niemand heeft ervan gegeten",
+  "tekst": [
+   "Op een kantoor in Tilburg staat sinds de intocht van Sinterklaas een schaal kruidnoten bij de koffieautomaat. De schaal is drie keer per dag leeg. Niemand heeft ervan gegeten.",
+   "Bij navraag verklaarden alle medewerkers dat ze alleen “eentje bij het langslopen” namen. “Eén kruidnoot weegt 1,7 gram”, zegt een van hen. “Dat is niks.”",
+   "De facilitair medewerker zette de schaal daarom maandag op een keukenweegschaal. Om negen uur wees die 510 gram aan. Om half elf nul.",
+   "Volgens de afdeling bewijst dat niets. “Dat is driehonderd keer niks”, aldus dezelfde collega. “En driehonderd keer niks is nog steeds niks.”",
+   "De weegschaal staat inmiddels weer in de kast. Hij was volgens het personeel kapot: sinds half elf geeft hij alleen nog nul aan."
+  ],
+  "bon_titel": "Maandag, 9.00–10.30 uur",
+  "bon": [
+   {
+    "wat": "300 kruidnoten (510 g)",
+    "kcal": 2254
+   }
+  ],
+  "noot": "Hele afdeling. Driehonderd keer niks.",
+  "links": [
+   [
+    "/calorieen-kruidnoten/",
+    "Hoeveel weegt een kruidnoot?"
+   ]
+  ],
+  "beeld": "kruidnoten-keukenweegschaal.jpg",
+  "beeld_alt": "Kantoorkeuken: een lege glazen schaal met kruimels en nog één kruidnoot op een digitale keukenweegschaal die 0 aangeeft. Naast de schaal een koffieautomaat; een hand met een koffiebekertje loopt langs."
  }
 ]
